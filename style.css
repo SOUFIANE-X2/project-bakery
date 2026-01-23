@@ -6,6 +6,7 @@
         .navbar {
             background-color: #594b3a; /*ma kyn lax mn border o borde-raduis bruh */
             opacity: 0.99;
+            height: 70px;
         }
 
         .nav-link {
@@ -40,7 +41,7 @@
             transform: scale(1.1);
         }
 
-        .Home img {
+        #im1 {
             opacity: 0.8;
             height: 100vh !important;
             object-fit: cover !important;
@@ -109,4 +110,4 @@
             background-color: #4b3f2f;
             color: #fff;
         }
-    
+        
