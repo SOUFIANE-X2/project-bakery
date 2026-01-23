@@ -6,7 +6,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="bootstrap.min.css" rel="stylesheet">
     <title>Bakery</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+         body {
+            background-image: url(i1.jpg);
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            color: #4b3f2f;
+            color: #4b3f2f;
+            font: optional;
+            
+        }
+        .navbar {
+            background-color: #594b3a; /*ma kyn lax mn border o borde-raduis bruh */
+            opacity: 0.9999;
+            height: 70px ;
+        }
+
+        .nav-link {
+            color: #fff !important;
+            font-family: Monotype Grotesque, sans-serif;
+            font-size: large;
+
+        }
+
+        .nav-link:hover {
+            text-decoration: underline;
+            color: beige !important;
+            opacity: 0.9;
+            transform: scale(1.1);
+            transition: all 0.3s ease;
+            
+            
+        }
+        .logo-img{
+            height: 60px !important;
+            width: auto !important;
+        }
+       
+        .navbar-brand {
+            transition: transform 0.3s ease;
+            
+        }
+        .title-products{
+            margin-top: 90px;
+            margin-left: 400px;
+            font-weight: 600;
+            font-family: 'Playfair Display', serif;
+            color: #000000;
+            margin-bottom: 30px;
+            
+        }
+        .Categories{
+            text-align: center;
+            
+        }
+        .containerservce{
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgb(92, 91, 87);
+            opacity: 0.9;
+            margin-top: 10px;
+            margin-left: 150px;
+            margin-right: 150px;
+            height: auto;
+            width: auto;
+            padding-left: 40px;
+            padding-top: 30px;
+            padding-bottom: 20px;
+            
+            
+        }
+        .card{
+            box-shadow: 0px 0px 10px rgb(146, 117, 1);
+            padding-bottom: 10px;
+            
+        }
+        .card img{
+            height: 280px;
+            width: auto; 
+        }
+        </style>
 
 
    
@@ -35,8 +116,9 @@
         </nav>
 </header>
     <h1 class=" display-1 title-products"> Our Delecious Products</h1>
+    <div class="container-fluid">
     <div class="containerservce">
-        <h3 class="fw-bold fs-4 text-center mb-4">Categories</h3>
+        <h2 class="fs-1 Categories mb-4">Categories</h2>
         <div class="row">
             <div class="col-md-4 mb-4">
                 <h2 class="fw-bold fs-3 text text-danger mb-4">Breads</h2>
@@ -54,7 +136,7 @@
                 <div class="card" style="width: 18rem;">
                     <img src="cakes.png" class="card-img-top" alt="Cake 1">
                 <div class="card-body">
-                    <h5 class="card-title">Chocolate Cake</h5>
+                    <h5 class="card-title">Cakes Categories</h5>
                 <p class="card-text">Rich chocolate cake with layers of moist sponge and creamy frosting, let's explore more. </p>
                 <a href="#" class="btn btn-primary">Explore more</a>
                 </div>
@@ -65,7 +147,7 @@
             <div class="card img3" style="width: 18rem;">
                 <img src="cookies.jpg" class="card-img-top" alt="Cookies">
                 <div class="card-body">
-                    <h5 class="card-title">Chocolate Chip Cookies</h5>
+                    <h5 class="card-title">Cookies Categories</h5>
                     <p class="card-text">Classic cookies loaded with chocolate chips and a perfect balance of sweetness.</p>
                     <a href="#" class="btn btn-primary">Explore more</a>
                 </div>
@@ -74,6 +156,8 @@
 
     </div>
     </div>
+    <div class="containerservce"></div>
+</div>
 <br><br>
     <footer>
         <div class="text-center p-3">
