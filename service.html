@@ -94,8 +94,8 @@
 
 
     .card img {
-        height: auto; 
-        width: 100%; 
+        height: 280px auto;
+        width: 100%;
     
     }
     .card-title{
@@ -157,14 +157,21 @@
         max-width: 100%;
     }
     
-    .card img {
-        height: 180px; 
-    }
+   
     }
     .imagebread{
-        height: 300px!important;
-        width: 100%;
+        height: 280px!important;
+        width: 100%!important;
 
+    }
+    .range{
+        font-size: 1.2rem;
+        font-family: sans-serif;
+        font-weight: 500;
+        margin-right: 20px;
+    }
+    .btn-warning{
+        background-color: rgb(255, 215, 15);
     }
         /*.containerservce{
             background-color: #fff;
@@ -247,7 +254,7 @@
                 <div class="card-body">
                     <h5 class="card-title text-center">Breads Categories</h5>
                     <p class="card-text text-center">Delicious Parisienne bread with a crispy crust and soft interior.let's explore more.</p>
-                    <a href="#" class="btn btn-primary">Explore more</a>
+                    <a href="#breads" class="btn btn-primary">Explore more</a>
                 </div>
             </div>
         </div>
@@ -259,7 +266,7 @@
                 <div class="card-body">
                     <h5 class="card-title text-center">Cakes Categories</h5>
                     <p class="card-text text-center">Rich chocolate cake with layers of moist sponge and creamy frosting, let's explore more.</p>
-                    <a href="#" class="btn btn-primary">Explore more</a>
+                    <a href="#cakes" class="btn btn-primary">Explore more</a>
                 </div>
             </div>
         </div>
@@ -341,99 +348,169 @@
 
     </div>
     </div>-->
-    <div class="containerservce">
-    <h2 class="fs-1 Categories mb-4" id="#breads">Breads Products</h2>
-    <div class="row g-3"> 
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="card cardbg-color h-100 text-center">
-          <img src="/images/b1.jpg" class="card-img-top imagebread" alt="Bread">
-          <div class="card-body p-2">
-            <h6 class="card-title">Foccacia</h6>
-            <p class="card-text small">A flat Italian bread topped with olive oil, herbs, and garlic.</p>
-          </div>
+<div class="containerservce">
+  <h2 class="fs-1 Categories mb-4" id="breads">Breads Products</h2>
+
+  <div class="row g-3">
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <div class="card cardbg-color h-100 text-center">
+        <img src="/images/b1.jpg" class="card-img-top imagebread" alt="Foccacia">
+        <div class="card-body p-2">
+          <h6 class="card-title">Foccacia</h6>
+          <p class="card-text small">Flat Italian bread with olive oil and herbs.</p>
+          <p class="fw-bold mb-1">12 MAD</p>
+          <input type="number" class="form-control form-control-sm text-center mb-2" min="1" value="1">
+          <button class="btn btn-sm btn-primary w-100">Add to Order</button>
         </div>
       </div>
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="card cardbg-color h-100 text-center">
-          <img src="/images/b2.jpg" class="card-img-top imagebread" alt="Bread">
-          <div class="card-body p-2">
-            <h6 class="card-title">Ciabatta</h6>
-            <p class="card-text small">A long, thin Italian bread with a crispy crust and soft interior.</p>
-          </div>
+    </div>
+
+  
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <div class="card cardbg-color h-100 text-center">
+        <img src="/images/b2.jpg" class="card-img-top imagebread" alt="Ciabatta">
+        <div class="card-body p-2">
+          <h6 class="card-title">Ciabatta</h6>
+          <p class="card-text small">Italian bread with crispy crust and soft inside.</p>
+          <p class="fw-bold mb-1">10 MAD</p>
+          <input type="number" class="form-control form-control-sm text-center mb-2" min="1" value="1">
+          <button class="btn btn-sm btn-primary w-100">Add to Order</button>
         </div>
       </div>
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="card cardbg-color h-100 text-center">
-          <img src="/images/b3.jpg" class="card-img-top imagebread" alt="Bread">
-          <div class="card-body p-2">
-            <h6 class="card-title">Sourdough Bread</h6>
-            <p class="card-text small">Traditional French bread with a crispy crust and airy interior.</p>
-          </div>
+    </div>
+
+    
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <div class="card cardbg-color h-100 text-center">
+        <img src="/images/b3.jpg" class="card-img-top imagebread" alt="Sourdough">
+        <div class="card-body p-2">
+          <h6 class="card-title">Sourdough Bread</h6>
+          <p class="card-text small">Naturally fermented with rich flavor.</p>
+          <p class="fw-bold mb-1">14 MAD</p>
+          <input type="number" class="form-control form-control-sm text-center mb-2" min="1" value="1">
+          <button class="btn btn-sm btn-primary w-100">Add to Order</button>
         </div>
       </div>
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="card cardbg-color h-100 text-center">
-          <img src="/images/b4.jpg" class="card-img-top imagebread" alt="Bread">
-          <div class="card-body p-2">
-            <h6 class="card-title">White Bread</h6>
-            <p class="card-text small">Soft and fluffy, ideal for sandwiches and toast.</p>
-          </div>
+    </div>
+
+  
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <div class="card cardbg-color h-100 text-center">
+        <img src="/images/b4.jpg" class="card-img-top imagebread" alt="White Bread">
+        <div class="card-body p-2">
+          <h6 class="card-title">White Bread</h6>
+          <p class="card-text small">Soft and fluffy for sandwiches.</p>
+          <p class="fw-bold mb-1">8 MAD</p>
+          <input type="number" class="form-control form-control-sm text-center mb-2" min="1" value="1">
+          <button class="btn btn-sm btn-primary w-100">Add to Order</button>
         </div>
       </div>
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="card cardbg-color h-100 text-center">
-          <img src="/images/b5.jpg" class="card-img-top imagebread" alt="Bread">
-          <div class="card-body p-2">
-            <h6 class="card-title">Multigrain Bread</h6>
-            <p class="card-text small">Baked with a mix of grains and seeds for extra taste and nutrition.</p>
-          </div>
+    </div>
+
+    
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <div class="card cardbg-color h-100 text-center">
+        <img src="/images/b5.jpg" class="card-img-top imagebread" alt="Multigrain">
+        <div class="card-body p-2">
+          <h6 class="card-title">Multigrain Bread</h6>
+          <p class="card-text small">Healthy bread with mixed grains.</p>
+          <p class="fw-bold mb-1">13 MAD</p>
+          <input type="number" class="form-control form-control-sm text-center mb-2" min="1" value="1">
+          <button class="btn btn-sm btn-primary w-100">Add to Order</button>
         </div>
       </div>
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="card cardbg-color h-100 text-center">
-          <img src="/images/b6.jpg" class="card-img-top imagebread" alt="Bread">
-          <div class="card-body p-2">
-            <h6 class="card-title">Rye Bread</h6>
-            <p class="card-text small">A tangy, fermented bread made with a natural starter culture.</p>
-          </div>
+    </div>
+
+  
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <div class="card cardbg-color h-100 text-center">
+        <img src="/images/b6.jpg" class="card-img-top imagebread" alt="Rye Bread">
+        <div class="card-body p-2">
+          <h6 class="card-title">Rye Bread</h6>
+          <p class="card-text small">Dense bread with strong taste.</p>
+          <p class="fw-bold mb-1">11 MAD</p>
+          <input type="number" class="form-control form-control-sm text-center mb-2" min="1" value="1">
+          <button class="btn btn-sm btn-primary w-100">Add to Order</button>
         </div>
       </div>
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="card cardbg-color h-100 text-center">
-          <img src="/images/b7.jpg" class="card-img-top imagebread" alt="Bread">
-          <div class="card-body p-2">
-            <h6 class="card-title">Baguette</h6>
-            <p class="card-text small">Traditional French bread with a crispy crust and airy interior.</p>
-          </div>
+    </div>
+
+   
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <div class="card cardbg-color h-100 text-center">
+        <img src="/images/b7.jpg" class="card-img-top imagebread" alt="Baguette">
+        <div class="card-body p-2">
+          <h6 class="card-title">Baguette</h6>
+          <p class="card-text small">Classic French crispy bread.</p>
+          <p class="fw-bold mb-1">7 MAD</p>
+          <input type="number" class="form-control form-control-sm text-center mb-2" min="1" value="1">
+          <button class="btn btn-sm btn-primary w-100">Add to Order</button>
         </div>
       </div>
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="card cardbg-color h-100 text-center">
-          <img src="/images/b8.jpg" class="card-img-top imagebread" alt="Bread">
-          <div class="card-body p-2">
-            <h6 class="card-title">whole wheat bread</h6>
-            <p class="card-text small">A nutritious bread made from whole wheat flour, offering a nutty flavor and high fiber content.</p>
-          </div>
+    </div>
+
+    
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <div class="card cardbg-color h-100 text-center">
+        <img src="/images/b8.jpg" class="card-img-top imagebread" alt="Whole Wheat">
+        <div class="card-body p-2">
+          <h6 class="card-title">Whole Wheat Bread</h6>
+          <p class="card-text small">Nutty flavor, high fiber.</p>
+          <p class="fw-bold mb-1">9 MAD</p>
+          <input type="number" class="form-control form-control-sm text-center mb-2" min="1" value="1">
+          <button class="btn btn-sm btn-primary w-100">Add to Order</button>
         </div>
       </div>
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="card cardbg-color h-100 text-center">
-          <img src="/images/b9.jpg" class="card-img-top imagebread" alt="Bread">
-          <div class="card-body p-2">
-            <h6 class="card-title">Brioche</h6>
-            <p class="card-text small">A rich, buttery French bread with a soft texture and sweet flavor.</p>
-          </div>
+    </div>
+
+   
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <div class="card cardbg-color h-100 text-center">
+        <img src="/images/b9.jpg" class="card-img-top imagebread" alt="Brioche">
+        <div class="card-body p-2">
+          <h6 class="card-title">Brioche</h6>
+          <p class="card-text small">Sweet and buttery bread.</p>
+          <p class="fw-bold mb-1">15 MAD</p>
+          <input type="number" class="form-control form-control-sm text-center mb-2" min="1" value="1">
+          <button class="btn btn-sm btn-primary w-100">Add to Order</button>
         </div>
       </div>
-      <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="card cardbg-color h-100 text-center">
-          <img src="/images/b10.jpg" class="card-img-top imagebread" alt="Bread">
-          <div class="card-body p-2">
-            <h6 class="card-title">pita bread</h6>
-            <p class="card-text small">Soft and fluffy, perfect for wraps and sandwiches.</p>
-          </div>
+    </div>
+
+    
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <div class="card cardbg-color h-100 text-center">
+        <img src="/images/b10.jpg" class="card-img-top imagebread" alt="Pita Bread">
+        <div class="card-body p-2">
+          <h6 class="card-title">Pita Bread</h6>
+          <p class="card-text small">Perfect for wraps and sandwiches.</p>
+          <p class="fw-bold mb-1">6 MAD</p>
+          <input type="number" class="form-control form-control-sm text-center mb-2" min="1" value="1">
+          <button class="btn btn-sm btn-primary w-100">Add to Order</button>
         </div>
       </div>
+    </div>
+    <div class="card col-lg-6 col-md-4 col-sm h-100">
+        <h4 class="mb-3">Confirm Your Order</h4>
+
+        <p class="small text-muted">
+            Please review your selected bread products and quantities.
+            Once you are ready, confirm your order by contacting us.
+        </p>
+
+        <ul class="list-unstyled small">
+            <li>✔ Select your favorite breads</li>
+            <li>✔ Choose the desired quantity</li>
+            <li>✔ Click confirm to proceed</li>
+        </ul>
+
+        <a href="contact.html" class="btn btn-warning mt-3 w-100">Confirm Order
+        </a>
+    </div>
+
+
+  </div>
+</div>
 
 </div>
 
