@@ -8,7 +8,7 @@
     <title>Bakery</title>
     <style>
     body {
-            background-image: url(i1.jpg);
+            background-image: url(/images/i1.jpg);
             background-position: center;
             background-size: cover;
             background-attachment: fixed;
@@ -161,7 +161,11 @@
         height: 180px; 
     }
     }
+    .imagebread{
+        height: 300px!important;
+        width: 100%;
 
+    }
         /*.containerservce{
             background-color: #fff;
             border-radius: 10px;
@@ -212,7 +216,7 @@
 <header>
     <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand fw-bold text-white" href="index.html"><img class="logo-img" src="logoo.png" alt="Bakey Logo">
+                <a class="navbar-brand fw-bold text-white" href="index.html"><img class="logo-img" src="/images/logoo.png" alt="Bakey Logo">
                 </a>
                 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#m">
@@ -239,7 +243,7 @@
         <div class="col-md-3 mb-4">
             <h2 class="fw-bold fs-3 text text-danger mb-4">Breads</h2>
             <div class="card" style="width: 100%;"> <!-- Changed to 100% width -->
-                <img src="breads.jpg" class="card-img-top" alt="Breads">
+                <img src="/images/breads.jpg" class="card-img-top" alt="Breads">
                 <div class="card-body">
                     <h5 class="card-title text-center">Breads Categories</h5>
                     <p class="card-text text-center">Delicious Parisienne bread with a crispy crust and soft interior.let's explore more.</p>
@@ -251,7 +255,7 @@
         <div class="col-md-3 mb-4">
             <h2 class="fw-bold fs-3 text-danger mb-4">Cakes</h2>
             <div class="card" style="width: 100%;"> 
-                <img src="cakes.png" class="card-img-top" alt="Cake 1">
+                <img src="/images/cakes.png" class="card-img-top" alt="Cake 1">
                 <div class="card-body">
                     <h5 class="card-title text-center">Cakes Categories</h5>
                     <p class="card-text text-center">Rich chocolate cake with layers of moist sponge and creamy frosting, let's explore more.</p>
@@ -263,7 +267,7 @@
         <div class="col-md-3 mb-4">
             <h2 class="fw-bold fs-3 text-danger mb-4">Cookies</h2>
             <div class="card" style="width: 100%;"> 
-                <img src="cookies.jpg" class="card-img-top" alt="Cookies">
+                <img src="/images/cookies.jpg" class="card-img-top" alt="Cookies">
                 <div class="card-body">
                     <h5 class="card-title text-center ">Cookies Categories</h5>
                     <p class="card-text text-center">Classic cookies loaded with chocolate chips and a perfect balance of sweetness.</p>
@@ -275,7 +279,7 @@
         <div class="col-md-3 mb-4">
             <h2 class="fw-bold fs-3 text-danger mb-4">Donuts</h2> 
             <div class="card" style="width: 100%;"> 
-                <img src="donuts.png" class="card-img-top" alt="donuts">
+                <img src="/images/donuts.png" class="card-img-top" alt="donuts">
                 <div class="card-body">
                     <h5 class="card-title text-center">Donuts Categories</h5> 
                     <p class="card-text text-center">Delicious donuts with a variety of flavors and toppings, let's explore more.</p>
@@ -285,7 +289,9 @@
         </div>
     </div>
 </div>
+<br> <br>
     <!-- <div class="containerservce">
+
         <h2 class="fs-1 Categories mb-4">Categories</h2>
         <div class="row">
             <div class="col-md-4 mb-4">
@@ -335,89 +341,100 @@
 
     </div>
     </div>-->
-    <div class="row g-3"> <!-- g-3 =space bint les carde -->
+    <div class="containerservce">
+    <h2 class="fs-1 Categories mb-4" id="#breads">Breads Products</h2>
+    <div class="row g-3"> 
       <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="card h-100 text-center">
-          <img src="" class="card-img-top" alt="Bread">
+        <div class="card cardbg-color h-100 text-center">
+          <img src="/images/b1.jpg" class="card-img-top imagebread" alt="Bread">
           <div class="card-body p-2">
-            <h6 class="card-title">White Bread</h6>
-            <p class="card-text small">Soft & fresh</p>
+            <h6 class="card-title">Foccacia</h6>
+            <p class="card-text small">A flat Italian bread topped with olive oil, herbs, and garlic.</p>
           </div>
         </div>
       </div>
       <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="card h-100 text-center">
-          <img src="" class="card-img-top" alt="Bread">
+        <div class="card cardbg-color h-100 text-center">
+          <img src="/images/b2.jpg" class="card-img-top imagebread" alt="Bread">
           <div class="card-body p-2">
-            <h6 class="card-title">White Bread</h6>
-            <p class="card-text small">Soft & fresh</p>
+            <h6 class="card-title">Ciabatta</h6>
+            <p class="card-text small">A long, thin Italian bread with a crispy crust and soft interior.</p>
           </div>
         </div>
       </div>
       <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="card h-100 text-center">
-          <img src="" class="card-img-top" alt="Bread">
+        <div class="card cardbg-color h-100 text-center">
+          <img src="/images/b3.jpg" class="card-img-top imagebread" alt="Bread">
           <div class="card-body p-2">
-            <h6 class="card-title">White Bread</h6>
-            <p class="card-text small">Soft & fresh</p>
+            <h6 class="card-title">Sourdough Bread</h6>
+            <p class="card-text small">Traditional French bread with a crispy crust and airy interior.</p>
           </div>
         </div>
       </div>
       <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="card h-100 text-center">
-          <img src="" class="card-img-top" alt="Bread">
+        <div class="card cardbg-color h-100 text-center">
+          <img src="/images/b4.jpg" class="card-img-top imagebread" alt="Bread">
           <div class="card-body p-2">
             <h6 class="card-title">White Bread</h6>
-            <p class="card-text small">Soft & fresh</p>
+            <p class="card-text small">Soft and fluffy, ideal for sandwiches and toast.</p>
           </div>
         </div>
       </div>
       <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="card h-100 text-center">
-          <img src="" class="card-img-top" alt="Bread">
+        <div class="card cardbg-color h-100 text-center">
+          <img src="/images/b5.jpg" class="card-img-top imagebread" alt="Bread">
           <div class="card-body p-2">
-            <h6 class="card-title">White Bread</h6>
-            <p class="card-text small">Soft & fresh</p>
+            <h6 class="card-title">Multigrain Bread</h6>
+            <p class="card-text small">Baked with a mix of grains and seeds for extra taste and nutrition.</p>
           </div>
         </div>
       </div>
       <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="card h-100 text-center">
-          <img src="" class="card-img-top" alt="Bread">
+        <div class="card cardbg-color h-100 text-center">
+          <img src="/images/b6.jpg" class="card-img-top imagebread" alt="Bread">
           <div class="card-body p-2">
-            <h6 class="card-title">White Bread</h6>
-            <p class="card-text small">Soft & fresh</p>
+            <h6 class="card-title">Rye Bread</h6>
+            <p class="card-text small">A tangy, fermented bread made with a natural starter culture.</p>
           </div>
         </div>
       </div>
       <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="card h-100 text-center">
-          <img src="" class="card-img-top" alt="Bread">
+        <div class="card cardbg-color h-100 text-center">
+          <img src="/images/b7.jpg" class="card-img-top imagebread" alt="Bread">
           <div class="card-body p-2">
-            <h6 class="card-title">White Bread</h6>
-            <p class="card-text small">Soft & fresh</p>
+            <h6 class="card-title">Baguette</h6>
+            <p class="card-text small">Traditional French bread with a crispy crust and airy interior.</p>
           </div>
         </div>
       </div>
       <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="card h-100 text-center">
-          <img src="" class="card-img-top" alt="Bread">
+        <div class="card cardbg-color h-100 text-center">
+          <img src="/images/b8.jpg" class="card-img-top imagebread" alt="Bread">
           <div class="card-body p-2">
-            <h6 class="card-title">White Bread</h6>
-            <p class="card-text small">Soft & fresh</p>
+            <h6 class="card-title">whole wheat bread</h6>
+            <p class="card-text small">A nutritious bread made from whole wheat flour, offering a nutty flavor and high fiber content.</p>
           </div>
         </div>
       </div>
       <div class="col-lg-3 col-md-4 col-sm-6">
-        <div class="card h-100 text-center">
-          <img src="" class="card-img-top" alt="Bread">
+        <div class="card cardbg-color h-100 text-center">
+          <img src="/images/b9.jpg" class="card-img-top imagebread" alt="Bread">
           <div class="card-body p-2">
-            <h6 class="card-title">White Bread</h6>
-            <p class="card-text small">Soft & fresh</p>
+            <h6 class="card-title">Brioche</h6>
+            <p class="card-text small">A rich, buttery French bread with a soft texture and sweet flavor.</p>
           </div>
         </div>
       </div>
-      
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="card cardbg-color h-100 text-center">
+          <img src="/images/b10.jpg" class="card-img-top imagebread" alt="Bread">
+          <div class="card-body p-2">
+            <h6 class="card-title">pita bread</h6>
+            <p class="card-text small">Soft and fluffy, perfect for wraps and sandwiches.</p>
+          </div>
+        </div>
+      </div>
+
 </div>
 
     <footer>
