@@ -10,9 +10,6 @@
 
         .navbar {
             background-color: #594b3a;
-            /*ma kyn lax mn border o borde-raduis bruh */
-            box-shadow: 0 3px 8px #594b3a;
-            /* raya7 chwya*/
         }
 
         .nav-link {
@@ -76,7 +73,7 @@
         }
 
         .btn-primary:hover {
-            background-color: #8c6e50;
+            background-color: #e98c3b;
             transform: scale(1.05);
         }
 
@@ -98,13 +95,16 @@
             border-radius: 15px;
             box-shadow: 0 10px 30px rgb(172, 226, 255);
             text-align: center;
+            height: 300px !important;
         }
          .card-statistique:hover{
             transform: scale(1.05);
-            box-shadow: 0 10px 30px rgb(253, 144, 144);
-            transition: 0.5s;
-        }
+            box-shadow: 0 10px 30px rgb(236, 178, 70);
+            transition: all 0.5s;
+           
 
+        }
+        
         .accordion-button,
         .accordion-body {
             background-color: #fdf6e3;

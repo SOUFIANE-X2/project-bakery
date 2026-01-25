@@ -40,25 +40,8 @@
 
             <div class="position-absolute top-50 start-50 translate-middle text-center p-4">
                 <h1 class=" fw-bold display-1" id="f1" ></h1>
-               <script>
-                const text = "Welcome to Our Bakery";
-                let i = 0;
-                const title = document.getElementById("f1");
-
-            function type() {
-                if (i < text.length) {
-                title.textContent = text.slice(0, i + 1) + "|";
-                i++;
-                setTimeout(type, 100);
-                } else {
-                    title.textContent = text;
-                }
-            }
-
-             type();
-</script>
+         
                 <p class="mb-4" id="f2">Freshly baked goods made with love and the finest ingredients.</p>
-                <a href="galerie.html" class="btn btn-primary btn-lg px-2 py-2 w-10 w-md-auto">Explore Our Products</a>
             </div>
         </div>
     </section>
@@ -78,14 +61,14 @@
                 <div class="fs-1 mb-2">🥐</div>
                 <h3 class="fw-bold text-primary">Croissant</h3>
                 <p class="mb-0 fw-bold fs-5">Best Seller</p>
-                <small class="text-muted">Our #1 favorite</small>
+                <small class="text-muted">Over 50,000 sold this year</small>
             </div>
 
             <div class="card card-statistique text-center p-4 col-12 col-md-5 col-lg-2">
                 <div class="fs-1 mb-2">🔥</div>
-                <h3 class="fw-bold text-primary">3,500+</h3>
+                <h3 class="fw-bold text-primary">+3,500 Fresh Bakes Daily</h3>
                 <p class="mb-0 fw-bold fs-5">Daily Fresh Bakes</p>
-                <small class="text-muted">Made every morning</small>
+                <small class="text-muted">Handcrafted every morning</small>
             </div>
 
             <div class="card card-statistique text-center p-4 col-12 col-md-5 col-lg-2">
@@ -97,6 +80,12 @@
 
         </div>
     </div>
+    <div class="text-center mt-4">
+        <h2 class="text-center mt-5 fs-1 mb-5">🎯 Ready to taste what everyone's raving about?</h2>
+        <a href="service.html" class="btn btn-primary btn-lg px-2 py-2 w-10 w-md-auto">Explore Our Menu →</a>
+    </div>
+    <br><br>
+    <br>
 </section>
 
 
@@ -158,6 +147,23 @@
             &copy; 2025 Bakery. All rights reserved.
         </div>
     </footer>
+          <script>
+                const text = "Welcome to Our Bakery";
+                let i = 0;
+                const title = document.getElementById("f1");
+
+            function type() {
+                if (i < text.length) {
+                title.textContent = text.slice(0, i + 1) + "|";
+                i++;
+                setTimeout(type, 100);
+                } else {
+                    title.textContent = text;
+                }
+            }
+
+             type();
+</script>
     <script src="bootstrap.bundle.min.js"></script>
 </body>
 
