@@ -127,9 +127,23 @@
             color: #fff;
             border: #3e3325;
         }
-
+        
+        .fa-instagram{
+            color: #e1306c;
+        }
+        .fa-linkedin{
+            color: #0e76a8;
+        }
+        .fa-facebook{
+            color: #3b5998;
+        }
+       
+        .fab:hover{
+            transform: scale(1.2);
+            transition: all 0.5s;
+        }
         footer {
-            background-color: #4b3f2f;
+            background-color: #452203;
             color: #fff;
         }
 
