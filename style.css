@@ -93,6 +93,17 @@
         .card:hover {
             transform: scale(1.05);
         }
+        .card-statistique{
+            background: #fff5e6; 
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgb(172, 226, 255);
+            text-align: center;
+        }
+         .card-statistique:hover{
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgb(253, 144, 144);
+            transition: 0.5s;
+        }
 
         .accordion-button,
         .accordion-body {
@@ -121,6 +132,8 @@
             background-color: #4b3f2f;
             color: #fff;
         }
+
+
 
         /*contact style*/
 
