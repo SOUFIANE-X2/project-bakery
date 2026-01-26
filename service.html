@@ -7,265 +7,11 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="all.min.css">
   <title>Bakery</title>
-  <style>
-    body {
-      background-image: url(images/i1.jpg);
-      background-position: center;
-      background-size: cover;
-      background-attachment: fixed;
-      background-repeat: no-repeat;
-      color: #4b3f2f;
-      color: #4b3f2f;
-      font: optional;
-
-    }
-
-    .navbar {
-      background-color: #594b3a;
-      opacity: 0.9999;
-      height: 70px;
-
-    }
-
-    .nav-link {
-      color: #fff !important;
-      font-family: Monotype Grotesque, sans-serif;
-      font-size: large;
-
-    }
-
-    .nav-link:hover {
-      text-decoration: underline;
-      color: beige !important;
-      opacity: 0.9;
-      transform: scale(1.1);
-      transition: all 0.3s ease;
-
-
-    }
-
-    .logo-img {
-      height: 60px !important;
-      width: auto !important;
-    }
-
-    .navbar-brand {
-      transition: transform 0.3s ease;
-
-    }
-
-    .title-products {
-      margin-top: 90px;
-      text-align: center;
-      font-weight: 600;
-      font-family: 'Playfair Display', serif;
-      color: #534014;
-      margin-bottom: 30px;
-
-    }
-
-    .Categories {
-      text-align: center;
-      font-family: 'Playfair Display', serif;
-      color: #642c12;
-      font-weight: 600;
-
-    }
-
-    .containerservce {
-      background-color: rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(30px);
-      box-shadow: 0px 0px 20px rgb(92, 91, 87);
-      border-radius: 10px;
-      margin-top: 10px;
-      margin-left: 50px;
-      margin-right: 50px;
-      height: auto;
-      width: auto;
-      padding: 30px 40px 0px;
-      backdrop-filter: blur(30px);
-
-
-    }
-
-    .card {
-      box-shadow: 0px 0px 10px #642c12;
-      padding-bottom: 10px;
-      background: #dfe8c8;
-
-    }
-
-    .card:hover {
-      transform: scale(1.03);
-      transition: all 0.5s ease;
-      ;
-    }
-
-
-    .card img {
-      height: 240px !important;
-      width: auto;
-
-    }
-
-    .card-title {
-      font-family: sans-serif;
-      font-size: 2rem;
-      color: #594b3a;
-      font-weight: 600;
-
-
-    }
-
-    .card-title:hover {
-      color: rgb(171, 79, 42);
-      transition: all 0.6s ease;
-      transform: scale(0.95);
-    }
-
-    .card-text {
-      font-family: 'sans-serif';
-      font-size: 1.1rem;
-      color: #4b3f2f;
-    }
-
-    .form-control {
-      background: rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(30px);
-      border: solid 1px rgb(171, 79, 42);
-    }
-
-    .form-control:focus {
-      background: #fff;
-      box-shadow: none;
-      border: #594b3a;
-    }
-
-    .btn-primary {
-      background-color: rgb(171, 79, 42);
-      border: none;
-      margin-top: auto;
-      width: 215px !important;
-    }
-
-    .btn-primary:hover {
-      background-color: rgb(215, 104, 60);
-      transform: scale(1.1);
-      transition: all 0.3s ease;
-    }
-
-    @media (max-width: 991.98px) and (min-width: 768px) {
-      .btn-primary {
-        background-color: rgb(171, 79, 42);
-        border: none;
-        margin-top: auto;
-        width: 190px !important;
-      }
-
-      .btn-primary:hover {
-        background-color: rgb(215, 104, 60);
-        transform: scale(1.1);
-        transition: all 0.3s ease;
-      }
-    }
-
-
-    @media (max-width: 992px) {
-      .containerservce {
-        margin-left: 20px;
-        margin-right: 20px;
-        padding: 20px;
-      }
-
-      .col-md-3 {
-        flex: 0 0 50%;
-        max-width: 50%;
-      }
-    }
-
-    @media (max-width: 768px) {
-      .containerservce {
-        margin-left: 15px;
-        margin-right: 15px;
-        padding: 15px;
-      }
-
-      .col-md-3 {
-        flex: 0 0 100%;
-        max-width: 100%;
-      }
-
-
-    }
-
-    .imagebread {
-      height: 340px !important;
-      width: 100% !important;
-
-    }
-
-    .range {
-      font-size: 1.2rem;
-      font-family: sans-serif;
-      font-weight: 500;
-      margin-right: 20px;
-    }
-
-    .btn-warning {
-      background-color: #8c6e50;
-      border: solid 1px #7e6f5a;
-      color: #fff;
-    }
-
-    .btn-warning:hover {
-      background-color: #4b3f2f;
-      border: solid 1px #7e6f5a;
-      color: #fff;
-    }
-
-    .btn-warning:active {
-      background-color: #baa488 !important;
-      border: none !important;
-      color: #fff !important;
-    }
-
-    .confirm {
-      padding-top: 25px;
-      padding-left: 15px;
-      margin-left: 40px;
-      width: 490px;
-    }
-
-    @media (max-width: 576px) {
-      .confirm {
-        margin-left: 35px;
-        width: 250px;
-      }
-    }
-
-    @media (max-width: 991.98px) and (min-width: 768px) {
-      .confirm {
-        margin-left: 10px;
-        width: 480px;
-      }
-    }
-
-    .containerservce {
-      backdrop-filter: blur(30px);
-    }
-
-    footer {
-      background-color: #4b3f2f;
-      color: #fff;
-
-    }
-  </style>
-
 </head>
 
-<body>
+<body class="serv">
   <header>
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
       <div class="container-fluid">
         <a class="navbar-brand fw-bold text-white" href="index.html"><img class="logo-img" src="images/logoo.png"
             alt="Bakey Logo">
@@ -301,11 +47,11 @@
             <div class="card h-100 w-100">
               <img src="images/breads.jpg" class="card-img-top" alt="Breads">
               <div class="card-body text-center d-flex flex-column">
-                <h5 class="card-title">Breads Category</h5>
-                <p class="card-text">
+                <h5 class="card-title ct">Breads Category</h5>
+                <p class="card-text ctx">
                   Delicious Parisienne bread with a crispy crust and soft interior.
                 </p>
-                <a href="#breads" class="btn btn-primary mt-auto">Find More</a>
+                <a href="#breads" class="btn btn-primary btp mt-auto">Find More</a>
               </div>
             </div>
           </div>
@@ -318,11 +64,11 @@
             <div class="card h-100 w-100">
               <img src="images/cakes.png" class="card-img-top" alt="Cake 1">
               <div class="card-body text-center d-flex flex-column">
-                <h5 class="card-title">Cakes Category</h5>
-                <p class="card-text">
+                <h5 class="card-title ct">Cakes Category</h5>
+                <p class="card-text ctx">
                   Rich chocolate cake with layers of moist sponge and creamy frosting.
                 </p>
-                <a href="#cakes" class="btn btn-primary mt-auto">Find More</a>
+                <a href="#cakes" class="btn btn-primary btp mt-auto">Find More</a>
               </div>
             </div>
           </div>
@@ -335,11 +81,11 @@
             <div class="card h-100 w-100">
               <img src="images/cookies.jpg" class="card-img-top" alt="Cookies">
               <div class="card-body text-center d-flex flex-column">
-                <h5 class="card-title">Cookies Category</h5>
-                <p class="card-text">
+                <h5 class="card-title ct">Cookies Category</h5>
+                <p class="card-text ctx">
                   Classic cookies loaded with a perfect balance of sweetness. Explore more.
                 </p>
-                <a href="#cookies" class="btn btn-primary mt-auto">Find More</a>
+                <a href="#cookies" class="btn btn-primary btp mt-auto">Find More</a>
               </div>
             </div>
           </div>
@@ -352,11 +98,11 @@
             <div class="card h-100 w-100">
               <img src="images/donuts.png" class="card-img-top" alt="Donuts">
               <div class="card-body text-center d-flex flex-column">
-                <h5 class="card-title">Donuts Category</h5>
-                <p class="card-text">
+                <h5 class="card-title ct">Donuts Category</h5>
+                <p class="card-text ctx">
                   Delicious donuts with a variety of flavors and toppings.
                 </p>
-                <a href="#donuts" class="btn btn-primary mt-auto">Find More</a>
+                <a href="#donuts" class="btn btn-primary btp mt-auto">Find More</a>
               </div>
             </div>
           </div>
@@ -373,12 +119,12 @@
         <div class="card cardbg-color h-100 text-center">
           <img src="images/b1.jpg" class="card-img-top imagebread" alt="Foccacia">
           <div class="card-body p-2 d-flex flex-column">
-            <h6 class="card-title">Foccacia</h6>
-            <p class="card-text small">Flat Italian bread with olive oil and herbs.</p>
+            <h6 class="card-title ct">Foccacia</h6>
+            <p class="card-text ctx small">Flat Italian bread with olive oil and herbs.</p>
             <p class="fw-bold mb-1">12 MAD</p>
             <div class="mt-auto">
-              <input type="number" class="form-control form-control-sm text-center mb-2" min="1" value="1">
-              <button class="btn btn-sm btn-primary w-100">Add to Order</button>
+              <input type="number" class="form-control fc form-control-sm text-center mb-2" min="1" value="1">
+              <button class="btn btn-sm btn-primary btp w-100">Add to Order</button>
             </div>
           </div>
         </div>
@@ -389,12 +135,12 @@
         <div class="card cardbg-color h-100 text-center">
           <img src="images/b2.jpg" class="card-img-top imagebread" alt="Ciabatta">
           <div class="card-body p-2 d-flex flex-column">
-            <h6 class="card-title">Ciabatta</h6>
-            <p class="card-text small">Italian bread with crispy crust and soft inside.</p>
+            <h6 class="card-title ct">Ciabatta</h6>
+            <p class="card-text ctx small">Italian bread with crispy crust and soft inside.</p>
             <p class="fw-bold mb-1">10 MAD</p>
             <div class="mt-auto">
-              <input type="number" class="form-control form-control-sm text-center mb-2" min="1" value="1">
-              <button class="btn btn-sm btn-primary w-100">Add to Order</button>
+              <input type="number" class="form-control fc form-control-sm text-center mb-2" min="1" value="1">
+              <button class="btn btn-sm btn-primary btp w-100">Add to Order</button>
             </div>
           </div>
         </div>
@@ -405,12 +151,12 @@
         <div class="card cardbg-color h-100 text-center">
           <img src="images/b3.jpg" class="card-img-top imagebread" alt="Sourdough">
           <div class="card-body p-2 d-flex flex-column">
-            <h6 class="card-title">Sourdough Bread</h6>
-            <p class="card-text small">Naturally fermented with rich flavor.</p>
+            <h6 class="card-title ct">Sourdough Bread</h6>
+            <p class="card-text ctx small">Naturally fermented with rich flavor.</p>
             <p class="fw-bold mb-1">14 MAD</p>
             <div class="mt-auto">
-              <input type="number" class="form-control form-control-sm text-center mb-2" min="1" value="1">
-              <button class="btn btn-sm btn-primary w-100">Add to Order</button>
+              <input type="number" class="form-control fc form-control-sm text-center mb-2" min="1" value="1">
+              <button class="btn btn-sm btn-primary btp w-100">Add to Order</button>
             </div>
           </div>
         </div>
@@ -421,12 +167,12 @@
         <div class="card cardbg-color h-100 text-center">
           <img src="images/b4.jpg" class="card-img-top imagebread" alt="White Bread">
           <div class="card-body p-2 d-flex flex-column">
-            <h6 class="card-title">White Bread</h6>
-            <p class="card-text small">Soft and fluffy for sandwiches.</p>
+            <h6 class="card-title ct">White Bread</h6>
+            <p class="card-text ctx small">Soft and fluffy for sandwiches.</p>
             <p class="fw-bold mb-1">8 MAD</p>
             <div class="mt-auto">
-              <input type="number" class="form-control form-control-sm text-center mb-2" min="1" value="1">
-              <button class="btn btn-sm btn-primary w-100">Add to Order</button>
+              <input type="number" class="form-control fc form-control-sm text-center mb-2" min="1" value="1">
+              <button class="btn btn-sm btn-primary btp w-100">Add to Order</button>
             </div>
           </div>
         </div>
@@ -437,12 +183,12 @@
         <div class="card cardbg-color h-100 text-center">
           <img src="images/b5.jpg" class="card-img-top imagebread" alt="Multigrain">
           <div class="card-body p-2 d-flex flex-column">
-            <h6 class="card-title">Multigrain Bread</h6>
-            <p class="card-text small">Healthy bread with mixed grains.</p>
+            <h6 class="card-title ct">Multigrain Bread</h6>
+            <p class="card-text ctx small">Healthy bread with mixed grains.</p>
             <p class="fw-bold mb-1">13 MAD</p>
             <div class="mt-auto">
-              <input type="number" class="form-control form-control-sm text-center mb-2" min="1" value="1">
-              <button class="btn btn-sm btn-primary w-100">Add to Order</button>
+              <input type="number" class="form-control fc form-control-sm text-center mb-2" min="1" value="1">
+              <button class="btn btn-sm btn-primary btp w-100">Add to Order</button>
             </div>
           </div>
         </div>
@@ -453,12 +199,12 @@
         <div class="card cardbg-color h-100 text-center">
           <img src="images/b6.jpg" class="card-img-top imagebread" alt="Rye Bread">
           <div class="card-body p-2 d-flex flex-column">
-            <h6 class="card-title">Rye Bread</h6>
-            <p class="card-text small">Dense bread with strong taste.</p>
+            <h6 class="card-title ct">Rye Bread</h6>
+            <p class="card-text ctx small">Dense bread with strong taste.</p>
             <p class="fw-bold mb-1">11 MAD</p>
             <div class="mt-auto">
-              <input type="number" class="form-control form-control-sm text-center mb-2" min="1" value="1">
-              <button class="btn btn-sm btn-primary w-100">Add to Order</button>
+              <input type="number" class="form-control fc form-control-sm text-center mb-2" min="1" value="1">
+              <button class="btn btn-sm btn-primary btp w-100">Add to Order</button>
             </div>
           </div>
         </div>
@@ -469,12 +215,12 @@
         <div class="card cardbg-color h-100 text-center">
           <img src="images/b7.jpg" class="card-img-top imagebread" alt="Baguette">
           <div class="card-body p-2 d-flex flex-column">
-            <h6 class="card-title">Baguette</h6>
-            <p class="card-text small">Classic French crispy bread.</p>
+            <h6 class="card-title ct">Baguette</h6>
+            <p class="card-text ctx small">Classic French crispy bread.</p>
             <p class="fw-bold mb-1">7 MAD</p>
             <div class="mt-auto">
-              <input type="number" class="form-control form-control-sm text-center mb-2" min="1" value="1">
-              <button class="btn btn-sm btn-primary w-100">Add to Order</button>
+              <input type="number" class="form-control fc form-control-sm text-center mb-2" min="1" value="1">
+              <button class="btn btn-sm btn-primary btp w-100">Add to Order</button>
             </div>
           </div>
         </div>
@@ -485,12 +231,12 @@
         <div class="card cardbg-color h-100 text-center">
           <img src="images/b8.jpg" class="card-img-top imagebread" alt="Whole Wheat">
           <div class="card-body p-2 d-flex flex-column">
-            <h6 class="card-title">Whole Wheat Bread</h6>
-            <p class="card-text small">Nutty flavor, high fiber.</p>
+            <h6 class="card-title ct">Whole Wheat Bread</h6>
+            <p class="card-text ctx small">Nutty flavor, high fiber.</p>
             <p class="fw-bold mb-1">9 MAD</p>
             <div class="mt-auto">
-              <input type="number" class="form-control form-control-sm text-center mb-2" min="1" value="1">
-              <button class="btn btn-sm btn-primary w-100">Add to Order</button>
+              <input type="number" class="form-control fc form-control-sm text-center mb-2" min="1" value="1">
+              <button class="btn btn-sm btn-primary btp w-100">Add to Order</button>
             </div>
           </div>
         </div>
@@ -501,12 +247,12 @@
         <div class="card cardbg-color h-100 text-center">
           <img src="images/b9.jpg" class="card-img-top imagebread" alt="Brioche">
           <div class="card-body p-2 d-flex flex-column">
-            <h6 class="card-title">Brioche</h6>
-            <p class="card-text small">Sweet and buttery bread.</p>
+            <h6 class="card-title ct">Brioche</h6>
+            <p class="card-text ctx small">Sweet and buttery bread.</p>
             <p class="fw-bold mb-1">15 MAD</p>
             <div class="mt-auto">
-              <input type="number" class="form-control form-control-sm text-center mb-2" min="1" value="1">
-              <button class="btn btn-sm btn-primary w-100">Add to Order</button>
+              <input type="number" class="form-control fc form-control-sm text-center mb-2" min="1" value="1">
+              <button class="btn btn-sm btn-primary btp w-100">Add to Order</button>
             </div>
           </div>
         </div>
@@ -517,12 +263,12 @@
         <div class="card cardbg-color h-100 text-center">
           <img src="images/b10.jpg" class="card-img-top imagebread" alt="Pita Bread">
           <div class="card-body p-2 d-flex flex-column">
-            <h6 class="card-title">Pita Bread</h6>
-            <p class="card-text small">Perfect for wraps and sandwiches.</p>
+            <h6 class="card-title ct">Pita Bread</h6>
+            <p class="card-text ctx small">Perfect for wraps and sandwiches.</p>
             <p class="fw-bold mb-1">6 MAD</p>
             <div class="mt-auto">
-              <input type="number" class="form-control form-control-sm text-center mb-2" min="1" value="1">
-              <button class="btn btn-sm btn-primary w-100">Add to Order</button>
+              <input type="number" class="form-control fc form-control-sm text-center mb-2" min="1" value="1">
+              <button class="btn btn-sm btn-primary btp w-100">Add to Order</button>
             </div>
           </div>
         </div>
@@ -541,7 +287,7 @@
           <li>✔ Click confirm to proceed</li>
         </ul>
 
-        <a href="contact.html" class="btn btn-warning mt-3 w-100">Confirm Order
+        <a href="contact.html" class="btn btn-warning btw mt-3 w-100">Confirm Order
         </a>
       </div>
 
@@ -556,12 +302,12 @@
         <div class="card cardbg-color h-100 text-center">
           <img src="images/choclate cake.jpg" class="card-img-top imagebread" alt="Foccacia">
           <div class="card-body p-2 d-flex flex-column">
-            <h6 class="card-title">choclate cake</h6>
-            <p class="card-text small">Rich, moist, and made with cocoa or melted chocolate</p>
+            <h6 class="card-title ct">choclate cake</h6>
+            <p class="card-text ctx small">Rich, moist, and made with cocoa or melted chocolate</p>
             <p class="fw-bold mb-1">25 MAD</p>
             <div class="mt-auto">
-              <input type="number" class="form-control form-control-sm text-center mb-2" min="1" value="1">
-              <button class="btn btn-sm btn-primary w-100">Add to Order</button>
+              <input type="number" class="form-control fc form-control-sm text-center mb-2" min="1" value="1">
+              <button class="btn btn-sm btn-primary btp w-100">Add to Order</button>
             </div>
           </div>
         </div>
@@ -572,12 +318,12 @@
         <div class="card cardbg-color h-100 text-center">
           <img src="images/vanilla cake.jpg" class="card-img-top imagebread" alt="Ciabatta">
           <div class="card-body p-2 d-flex flex-column">
-            <h6 class="card-title">vanilla cake</h6>
-            <p class="card-text small">Light and fluffy, perfect for celebrations.</p>
+            <h6 class="card-title ct">vanilla cake</h6>
+            <p class="card-text ctx small">Light and fluffy, perfect for celebrations.</p>
             <p class="fw-bold mb-1">25 MAD</p>
             <div class="mt-auto">
-              <input type="number" class="form-control form-control-sm text-center mb-2" min="1" value="1">
-              <button class="btn btn-sm btn-primary w-100">Add to Order</button>
+              <input type="number" class="form-control fc form-control-sm text-center mb-2" min="1" value="1">
+              <button class="btn btn-sm btn-primary btp w-100">Add to Order</button>
             </div>
           </div>
         </div>
@@ -588,12 +334,12 @@
         <div class="card cardbg-color h-100 text-center">
           <img src="images/Red Velvet Cake.jpg" class="card-img-top imagebread" alt="Sourdough">
           <div class="card-body p-2 d-flex flex-column">
-            <h6 class="card-title">Red Velvet Cake</h6>
-            <p class="card-text small">Moist and rich with a hint of cocoa flavor.</p>
+            <h6 class="card-title ct">Red Velvet Cake</h6>
+            <p class="card-text ctx small">Moist and rich with a hint of cocoa flavor.</p>
             <p class="fw-bold mb-1">30 MAD</p>
             <div class="mt-auto">
-              <input type="number" class="form-control form-control-sm text-center mb-2" min="1" value="1">
-              <button class="btn btn-sm btn-primary w-100">Add to Order</button>
+              <input type="number" class="form-control fc form-control-sm text-center mb-2" min="1" value="1">
+              <button class="btn btn-sm btn-primary btp w-100">Add to Order</button>
             </div>
           </div>
         </div>
@@ -604,12 +350,12 @@
         <div class="card cardbg-color h-100 text-center">
           <img src="images/Cheesecake.jpg" class="card-img-top imagebread" alt="White Bread">
           <div class="card-body p-2 d-flex flex-column">
-            <h6 class="card-title">Cheesecake</h6>
-            <p class="card-text small">Creamy and smooth, often served with fruit toppings.</p>
+            <h6 class="card-title ct">Cheesecake</h6>
+            <p class="card-text ctx small">Creamy and smooth, often served with fruit toppings.</p>
             <p class="fw-bold mb-1">35 MAD</p>
             <div class="mt-auto">
-              <input type="number" class="form-control form-control-sm text-center mb-2" min="1" value="1">
-              <button class="btn btn-sm btn-primary w-100">Add to Order</button>
+              <input type="number" class="form-control fc form-control-sm text-center mb-2" min="1" value="1">
+              <button class="btn btn-sm btn-primary btp w-100">Add to Order</button>
             </div>
           </div>
         </div>
@@ -620,12 +366,12 @@
         <div class="card cardbg-color h-100 text-center">
           <img src="images/Black Forest Cake.jpg" class="card-img-top imagebread" alt="Multigrain">
           <div class="card-body p-2 d-flex flex-column">
-            <h6 class="card-title">Black Forest Cake</h6>
-            <p class="card-text small">Moist and rich with a hint of cocoa flavor.</p>
+            <h6 class="card-title ct">Black Forest Cake</h6>
+            <p class="card-text ctx small">Moist and rich with a hint of cocoa flavor.</p>
             <p class="fw-bold mb-1">30 MAD</p>
             <div class="mt-auto">
-              <input type="number" class="form-control form-control-sm text-center mb-2" min="1" value="1">
-              <button class="btn btn-sm btn-primary w-100">Add to Order</button>
+              <input type="number" class="form-control fc form-control-sm text-center mb-2" min="1" value="1">
+              <button class="btn btn-sm btn-primary btp w-100">Add to Order</button>
             </div>
           </div>
         </div>
@@ -636,12 +382,12 @@
         <div class="card cardbg-color h-100 text-center">
           <img src="images/Mille-Feuille Cake.jpg" class="card-img-top imagebread" alt="Rye Bread">
           <div class="card-body p-2 d-flex flex-column">
-            <h6 class="card-title">Mille-Feuille Cake</h6>
-            <p class="card-text small">Delicate layers of pastry cream and fruit.</p>
+            <h6 class="card-title ct">Mille-Feuille Cake</h6>
+            <p class="card-text ctx small">Delicate layers of pastry cream and fruit.</p>
             <p class="fw-bold mb-1">40 MAD</p>
             <div class="mt-auto">
-              <input type="number" class="form-control form-control-sm text-center mb-2" min="1" value="1">
-              <button class="btn btn-sm btn-primary w-100">Add to Order</button>
+              <input type="number" class="form-control fc form-control-sm text-center mb-2" min="1" value="1">
+              <button class="btn btn-sm btn-primary btp w-100">Add to Order</button>
             </div>
           </div>
         </div>
@@ -652,12 +398,12 @@
         <div class="card cardbg-color h-100 text-center">
           <img src="images/Lemon Cake.jpg" class="card-img-top imagebread" alt="Baguette">
           <div class="card-body p-2 d-flex flex-column">
-            <h6 class="card-title">Lemon Cake</h6>
-            <p class="card-text small">Light and refreshing, perfect for a sweet treat.</p>
+            <h6 class="card-title ct">Lemon Cake</h6>
+            <p class="card-text ctx small">Light and refreshing, perfect for a sweet treat.</p>
             <p class="fw-bold mb-1">20 MAD</p>
             <div class="mt-auto">
-              <input type="number" class="form-control form-control-sm text-center mb-2" min="1" value="1">
-              <button class="btn btn-sm btn-primary w-100">Add to Order</button>
+              <input type="number" class="form-control fc form-control-sm text-center mb-2" min="1" value="1">
+              <button class="btn btn-sm btn-primary btp w-100">Add to Order</button>
             </div>
           </div>
         </div>
@@ -668,12 +414,12 @@
         <div class="card cardbg-color h-100 text-center">
           <img src="images/Fruit Cake.jpg" class="card-img-top imagebread" alt="Whole Wheat">
           <div class="card-body p-2 d-flex flex-column">
-            <h6 class="card-title">Fruit Cake</h6>
-            <p class="card-text small">Rich, moist, and made with cocoa or melted chocolate</p>
+            <h6 class="card-title ct">Fruit Cake</h6>
+            <p class="card-text ctx small">Rich, moist, and made with cocoa or melted chocolate</p>
             <p class="fw-bold mb-1">25 MAD</p>
             <div class="mt-auto">
-              <input type="number" class="form-control form-control-sm text-center mb-2" min="1" value="1">
-              <button class="btn btn-sm btn-primary w-100">Add to Order</button>
+              <input type="number" class="form-control fc form-control-sm text-center mb-2" min="1" value="1">
+              <button class="btn btn-sm btn-primary btp w-100">Add to Order</button>
             </div>
           </div>
         </div>
@@ -684,12 +430,12 @@
         <div class="card cardbg-color h-100 text-center">
           <img src="images/Coffee Cake.jpg" class="card-img-top imagebread" alt="Brioche">
           <div class="card-body p-2 d-flex flex-column">
-            <h6 class="card-title">Coffee Cake</h6>
-            <p class="card-text small">Moist and rich with a hint of cocoa flavor.</p>
+            <h6 class="card-title ct">Coffee Cake</h6>
+            <p class="card-text ctx small">Moist and rich with a hint of cocoa flavor.</p>
             <p class="fw-bold mb-1">30 MAD</p>
             <div class="mt-auto">
-              <input type="number" class="form-control form-control-sm text-center mb-2" min="1" value="1">
-              <button class="btn btn-sm btn-primary w-100">Add to Order</button>
+              <input type="number" class="form-control fc form-control-sm text-center mb-2" min="1" value="1">
+              <button class="btn btn-sm btn-primary btp w-100">Add to Order</button>
             </div>
           </div>
         </div>
@@ -700,12 +446,12 @@
         <div class="card cardbg-color h-100 text-center">
           <img src="images/Tiramisu Cake.jpg" class="card-img-top imagebread" alt="Pita Bread">
           <div class="card-body p-2 d-flex flex-column">
-            <h6 class="card-title">Tiramisu Cake</h6>
-            <p class="card-text small">Creamy and smooth, often served with fruit toppings.</p>
+            <h6 class="card-title ct">Tiramisu Cake</h6>
+            <p class="card-text ctx small">Creamy and smooth, often served with fruit toppings.</p>
             <p class="fw-bold mb-1">35 MAD</p>
             <div class="mt-auto">
-              <input type="number" class="form-control form-control-sm text-center mb-2" min="1" value="1">
-              <button class="btn btn-sm btn-primary w-100">Add to Order</button>
+              <input type="number" class="form-control fc form-control-sm text-center mb-2" min="1" value="1">
+              <button class="btn btn-sm btn-primary btp w-100">Add to Order</button>
             </div>
           </div>
         </div>
@@ -724,7 +470,7 @@
           <li>✔ Click confirm to proceed</li>
         </ul>
 
-        <a href="contact.html" class="btn btn-warning mt-3 w-100">Confirm Order
+        <a href="contact.html" class="btn btn-warning btw mt-3 w-100">Confirm Order
         </a>
       </div>
     </div>
@@ -737,12 +483,12 @@
         <div class="card  h-100 text-center">
           <img src="images/Chocolate Chip Cookies.jpg" class="card-img-top imagesservice" alt="Chocolate Chip Cookies">
           <div class="card-body p-2 d-flex flex-column">
-            <h6 class="card-title">Chocolate Chip Cookies</h6>
-            <p class="card-text small"> classic and loved by everyone</p>
+            <h6 class="card-title ct">Chocolate Chip Cookies</h6>
+            <p class="card-text ctx small"> classic and loved by everyone</p>
             <p class="fw-bold mb-1">12 MAD</p>
             <div class="mt-auto">
-              <input type="number" class="form-control form-control-sm text-center mb-2" min="1" value="1">
-              <button class="btn btn-sm btn-primary w-100">Add to Order</button>
+              <input type="number" class="form-control fc form-control-sm text-center mb-2" min="1" value="1">
+              <button class="btn btn-sm btn-primary btp w-100">Add to Order</button>
             </div>
           </div>
         </div>
@@ -753,12 +499,12 @@
         <div class="card  h-100 text-center">
           <img src="images/Oatmeal Raisin Cookies.jpg" class="card-img-top imagesservice" alt="Oatmeal Raisin Cookies">
           <div class="card-body p-2 d-flex flex-column">
-            <h6 class="card-title">Oatmeal Raisin Cookies</h6>
-            <p class="card-text small">Oatmeal and raisins for a chewy texture.</p>
+            <h6 class="card-title ct">Oatmeal Raisin Cookies</h6>
+            <p class="card-text ctx small">Oatmeal and raisins for a chewy texture.</p>
             <p class="fw-bold mb-1">15 MAD</p>
             <div class="mt-auto">
-              <input type="number" class="form-control form-control-sm text-center mb-2" min="1" value="1">
-              <button class="btn btn-sm btn-primary w-100">Add to Order</button>
+              <input type="number" class="form-control fc form-control-sm text-center mb-2" min="1" value="1">
+              <button class="btn btn-sm btn-primary btp w-100">Add to Order</button>
             </div>
           </div>
         </div>
@@ -770,12 +516,12 @@
           <img src="images/Peanut Butter Criss-Cross.jpg" class="card-img-top imagesservice"
             alt="Peanut Butter Criss-Cross">
           <div class="card-body p-2 d-flex flex-column">
-            <h6 class="card-title">Peanut Butter Criss-Cross</h6>
-            <p class="card-text small">Peanut butter and criss-cross pattern.</p>
+            <h6 class="card-title ct">Peanut Butter Criss-Cross</h6>
+            <p class="card-text ctx small">Peanut butter and criss-cross pattern.</p>
             <p class="fw-bold mb-1">16 MAD</p>
             <div class="mt-auto">
-              <input type="number" class="form-control form-control-sm text-center mb-2" min="1" value="1">
-              <button class="btn btn-sm btn-primary w-100">Add to Order</button>
+              <input type="number" class="form-control fc form-control-sm text-center mb-2" min="1" value="1">
+              <button class="btn btn-sm btn-primary btp w-100">Add to Order</button>
             </div>
           </div>
         </div>
@@ -786,12 +532,12 @@
         <div class="card  h-100 text-center">
           <img src="images/Red Velvet Cookies.jpg" class="card-img-top imagesservice" alt="Red Velvet Cookies">
           <div class="card-body p-2 d-flex flex-column">
-            <h6 class="card-title">Red Velvet Cookies</h6>
-            <p class="card-text small">Rich red velvet flavor with cream cheese frosting.</p>
+            <h6 class="card-title ct">Red Velvet Cookies</h6>
+            <p class="card-text ctx small">Rich red velvet flavor with cream cheese frosting.</p>
             <p class="fw-bold mb-1">18 MAD</p>
             <div class="mt-auto">
-              <input type="number" class="form-control form-control-sm text-center mb-2" min="1" value="1">
-              <button class="btn btn-sm btn-primary w-100">Add to Order</button>
+              <input type="number" class="form-control fc form-control-sm text-center mb-2" min="1" value="1">
+              <button class="btn btn-sm btn-primary btp w-100">Add to Order</button>
             </div>
           </div>
         </div>
@@ -803,12 +549,12 @@
           <img src="images/Matcha Green Tea Cookie.jpg" class="card-img-top imagesservice"
             alt="Matcha Green Tea Cookie">
           <div class="card-body p-2 d-flex flex-column">
-            <h6 class="card-title">Matcha Green Tea Cookie</h6>
-            <p class="card-text small">Delicate matcha flavor with a hint of sweetness.</p>
+            <h6 class="card-title ct">Matcha Green Tea Cookie</h6>
+            <p class="card-text ctx small">Delicate matcha flavor with a hint of sweetness.</p>
             <p class="fw-bold mb-1">14 MAD</p>
             <div class="mt-auto">
-              <input type="number" class="form-control form-control-sm text-center mb-2" min="1" value="1">
-              <button class="btn btn-sm btn-primary w-100">Add to Order</button>
+              <input type="number" class="form-control fc form-control-sm text-center mb-2" min="1" value="1">
+              <button class="btn btn-sm btn-primary btp w-100">Add to Order</button>
             </div>
           </div>
         </div>
@@ -819,12 +565,12 @@
         <div class="card  h-100 text-center">
           <img src="images/Black Cocoa Cookie.jpg" class="card-img-top imagesservice" alt="Black Cocoa  Cookie">
           <div class="card-body p-2 d-flex flex-column">
-            <h6 class="card-title">Black Cocoa Cookie 🍫</h6>
-            <p class="card-text small">Rich black cocoa flavor with a hint of sweetness let's make it special!</p>
+            <h6 class="card-title ct">Black Cocoa Cookie 🍫</h6>
+            <p class="card-text ctx small">Rich black cocoa flavor with a hint of sweetness let's make it special!</p>
             <p class="fw-bold mb-1">17 MAD</p>
             <div class="mt-auto">
-              <input type="number" class="form-control form-control-sm text-center mb-2" min="1" value="1">
-              <button class="btn btn-sm btn-primary w-100">Add to Order</button>
+              <input type="number" class="form-control fc form-control-sm text-center mb-2" min="1" value="1">
+              <button class="btn btn-sm btn-primary btp w-100">Add to Order</button>
             </div>
           </div>
         </div>
@@ -835,12 +581,12 @@
         <div class="card  h-100 text-center">
           <img src="images/Lemon Crinkle Cookie.jpg" class="card-img-top imagesservice" alt="Lemon Crinkle Cookie">
           <div class="card-body p-2 d-flex flex-column">
-            <h6 class="card-title">Lemon Crinkle Cookie🍋</h6>
-            <p class="card-text small">Zesty lemon flavor with a crinkled texture. let's make it special!</p>
+            <h6 class="card-title ct">Lemon Crinkle Cookie🍋</h6>
+            <p class="card-text ctx small">Zesty lemon flavor with a crinkled texture. let's make it special!</p>
             <p class="fw-bold mb-1">17 MAD</p>
             <div class="mt-auto">
-              <input type="number" class="form-control form-control-sm text-center mb-2" min="1" value="1">
-              <button class="btn btn-sm btn-primary w-100">Add to Order</button>
+              <input type="number" class="form-control fc form-control-sm text-center mb-2" min="1" value="1">
+              <button class="btn btn-sm btn-primary btp w-100">Add to Order</button>
             </div>
           </div>
         </div>
@@ -852,12 +598,12 @@
           <img src="images/Rainbow Sprinkle Cookie.jpg" class="card-img-top imagesservice"
             alt="Rainbow Sprinkle Cookie">
           <div class="card-body p-2 d-flex flex-column">
-            <h6 class="card-title">Rainbow Sprinkle Cookie</h6>
-            <p class="card-text small">Colorful sprinkles with a sweet taste. let's make it special!</p>
+            <h6 class="card-title ct">Rainbow Sprinkle Cookie</h6>
+            <p class="card-text ctx small">Colorful sprinkles with a sweet taste. let's make it special!</p>
             <p class="fw-bold mb-1">15 MAD</p>
             <div class="mt-auto">
-              <input type="number" class="form-control form-control-sm text-center mb-2" min="1" value="1">
-              <button class="btn btn-sm btn-primary w-100">Add to Order</button>
+              <input type="number" class="form-control fc form-control-sm text-center mb-2" min="1" value="1">
+              <button class="btn btn-sm btn-primary btp w-100">Add to Order</button>
             </div>
           </div>
         </div>
@@ -869,12 +615,12 @@
           <img src="images/White Chocolate Cranberry.jpg" class="card-img-top imagesservice"
             alt="White Chocolate Cranberry">
           <div class="card-body p-2 d-flex flex-column">
-            <h6 class="card-title">White Chocolate Cranberry</h6>
-            <p class="card-text small">Sweet white chocolate with tart cranberries.</p>
+            <h6 class="card-title ct">White Chocolate Cranberry</h6>
+            <p class="card-text ctx small">Sweet white chocolate with tart cranberries.</p>
             <p class="fw-bold mb-1">15 MAD</p>
             <div class="mt-auto">
-              <input type="number" class="form-control form-control-sm text-center mb-2" min="1" value="1">
-              <button class="btn btn-sm btn-primary w-100">Add to Order</button>
+              <input type="number" class="form-control fc form-control-sm text-center mb-2" min="1" value="1">
+              <button class="btn btn-sm btn-primary btp w-100">Add to Order</button>
             </div>
           </div>
         </div>
@@ -885,12 +631,12 @@
         <div class="card  h-100 text-center">
           <img src="images/Pistachio Cookie.jpg" class="card-img-top imagesservice" alt="Pistachio Cookie">
           <div class="card-body p-2 d-flex flex-column">
-            <h6 class="card-title"> Crunchy Pistachio Cookie </h6>
-            <p class="card-text small">Soft green cookie with crunchy pistachio bits. </p>
+            <h6 class="card-title ct"> Crunchy Pistachio Cookie </h6>
+            <p class="card-text ctx small">Soft green cookie with crunchy pistachio bits. </p>
             <p class="fw-bold mb-1">15 MAD</p>
             <div class="mt-auto">
-              <input type="number" class="form-control form-control-sm text-center mb-2" min="1" value="1">
-              <button class="btn btn-sm btn-primary w-100">Add to Order</button>
+              <input type="number" class="form-control fc form-control-sm text-center mb-2" min="1" value="1">
+              <button class="btn btn-sm btn-primary btp w-100">Add to Order</button>
             </div>
           </div>
         </div>
@@ -909,7 +655,7 @@
           <li>✔ Click confirm to proceed</li>
         </ul>
 
-        <a href="contact.html" class="btn btn-warning mt-3 w-100">Confirm Order
+        <a href="contact.html" class="btn btn-warning btw mt-3 w-100">Confirm Order
         </a>
       </div>
 
@@ -925,12 +671,12 @@
         <div class="card  h-100 text-center">
           <img src="images/Chocolate Chip Muffin.jpg" class="card-img-top imagesservice" alt="Chocolate Chip Muffin">
           <div class="card-body p-2 d-flex flex-column">
-            <h6 class="card-title">Chocolate Chip <br>Muffin</h6>
-            <p class="card-text small">Fluffy donut topped with rich chocolate icing.</p>
+            <h6 class="card-title ct">Chocolate Chip <br>Muffin</h6>
+            <p class="card-text ctx small">Fluffy donut topped with rich chocolate icing.</p>
             <p class="fw-bold mb-1">25 MAD</p>
             <div class="mt-auto">
-              <input type="number" class="form-control form-control-sm text-center mb-2" min="1" value="1">
-              <button class="btn btn-sm btn-primary w-100">Add to Order</button>
+              <input type="number" class="form-control fc form-control-sm text-center mb-2" min="1" value="1">
+              <button class="btn btn-sm btn-primary btp w-100">Add to Order</button>
             </div>
           </div>
         </div>
@@ -941,12 +687,12 @@
         <div class="card  h-100 text-center">
           <img src="images/Boston Cream Donut.jpg" class="card-img-top imagesservice" alt="Boston Cream Donut">
           <div class="card-body p-2 d-flex flex-column">
-            <h6 class="card-title">Boston Cream<br> Donut</h6>
-            <p class="card-text small">Filled with creamy custard and topped with chocolate.</p>
+            <h6 class="card-title ct">Boston Cream<br> Donut</h6>
+            <p class="card-text ctx small">Filled with creamy custard and topped with chocolate.</p>
             <p class="fw-bold mb-1">25 MAD</p>
             <div class="mt-auto">
-              <input type="number" class="form-control form-control-sm text-center mb-2" min="1" value="1">
-              <button class="btn btn-sm btn-primary w-100">Add to Order</button>
+              <input type="number" class="form-control fc form-control-sm text-center mb-2" min="1" value="1">
+              <button class="btn btn-sm btn-primary btp w-100">Add to Order</button>
             </div>
           </div>
         </div>
@@ -957,12 +703,12 @@
         <div class="card  h-100 text-center">
           <img src="images/Blueberry Muffin.jpg" class="card-img-top imagesservice" alt="Blueberry Muffin">
           <div class="card-body p-2 d-flex flex-column">
-            <h6 class="card-title">Blueberry Muffin <br>🫐</h6>
-            <p class="card-text small">Fluffy and delicious, packed with fresh blueberries.</p>
+            <h6 class="card-title ct">Blueberry Muffin <br>🫐</h6>
+            <p class="card-text ctx small">Fluffy and delicious, packed with fresh blueberries.</p>
             <p class="fw-bold mb-1">20 MAD</p>
             <div class="mt-auto">
-              <input type="number" class="form-control form-control-sm text-center mb-2" min="1" value="1">
-              <button class="btn btn-sm btn-primary w-100">Add to Order</button>
+              <input type="number" class="form-control fc form-control-sm text-center mb-2" min="1" value="1">
+              <button class="btn btn-sm btn-primary btp w-100">Add to Order</button>
             </div>
           </div>
         </div>
@@ -973,12 +719,12 @@
         <div class="card  h-100 text-center">
           <img src="images/Powdered Sugar Donuts.jpg" class="card-img-top imagesservice" alt="Powdered Sugar Donuts">
           <div class="card-body p-2 d-flex flex-column">
-            <h6 class="card-title">Powdered Sugar Donuts</h6>
-            <p class="card-text small">Light and fluffy, perfect for celebrations, let's make it special!</p>
+            <h6 class="card-title ct">Powdered Sugar Donuts</h6>
+            <p class="card-text ctx small">Light and fluffy, perfect for celebrations, let's make it special!</p>
             <p class="fw-bold mb-1">25 MAD</p>
             <div class="mt-auto">
-              <input type="number" class="form-control form-control-sm text-center mb-2" min="1" value="1">
-              <button class="btn btn-sm btn-primary w-100">Add to Order</button>
+              <input type="number" class="form-control fc form-control-sm text-center mb-2" min="1" value="1">
+              <button class="btn btn-sm btn-primary btp w-100">Add to Order</button>
             </div>
           </div>
         </div>
@@ -989,12 +735,12 @@
         <div class="card  h-100 text-center">
           <img src="images/Banana Nut Muffin.jpg" class="card-img-top imagesservice" alt="Banana Nut Muffin">
           <div class="card-body p-2 d-flex flex-column">
-            <h6 class="card-title">Banana Nut Muffin <br>🍌</h6>
-            <p class="card-text small">Moist banana-flavored muffin with crunchy walnuts.</p>
+            <h6 class="card-title ct">Banana Nut Muffin <br>🍌</h6>
+            <p class="card-text ctx small">Moist banana-flavored muffin with crunchy walnuts.</p>
             <p class="fw-bold mb-1">30 MAD</p>
             <div class="mt-auto">
-              <input type="number" class="form-control form-control-sm text-center mb-2" min="1" value="1">
-              <button class="btn btn-sm btn-primary w-100">Add to Order</button>
+              <input type="number" class="form-control fc form-control-sm text-center mb-2" min="1" value="1">
+              <button class="btn btn-sm btn-primary btp w-100">Add to Order</button>
             </div>
           </div>
         </div>
@@ -1005,12 +751,13 @@
         <div class="card  h-100 text-center">
           <img src="images/Cinnamon Sugar Donut.jpg" class="card-img-top imagesservice" alt="Cinnamon Sugar Donut">
           <div class="card-body p-2 d-flex flex-column">
-            <h6 class="card-title">Cinnamon Sugar Donut</h6>
-            <p class="card-text small">Spiced and sweet, perfect for a cozy morning treat , let's make it special!</p>
+            <h6 class="card-title ct">Cinnamon Sugar Donut</h6>
+            <p class="card-text ctx small">Spiced and sweet, perfect for a cozy morning treat , let's make it special!
+            </p>
             <p class="fw-bold mb-1">25 MAD</p>
             <div class="mt-auto">
-              <input type="number" class="form-control form-control-sm text-center mb-2" min="1" value="1">
-              <button class="btn btn-sm btn-primary w-100">Add to Order</button>
+              <input type="number" class="form-control fc form-control-sm text-center mb-2" min="1" value="1">
+              <button class="btn btn-sm btn-primary btp w-100">Add to Order</button>
             </div>
           </div>
         </div>
@@ -1022,12 +769,12 @@
           <img src="images/Lemon Poppy Seed Muffin.jpg" class="card-img-top imagesservice"
             alt="Lemon Poppy Seed Muffin">
           <div class="card-body p-2 d-flex flex-column">
-            <h6 class="card-title">Lemon Poppy Seed Muffin</h6>
-            <p class="card-text small">Tangy lemon muffin with a poppy seed crunch.</p>
+            <h6 class="card-title ct">Lemon Poppy Seed Muffin</h6>
+            <p class="card-text ctx small">Tangy lemon muffin with a poppy seed crunch.</p>
             <p class="fw-bold mb-1">22 MAD</p>
             <div class="mt-auto">
-              <input type="number" class="form-control form-control-sm text-center mb-2" min="1" value="1">
-              <button class="btn btn-sm btn-primary w-100">Add to Order</button>
+              <input type="number" class="form-control fc form-control-sm text-center mb-2" min="1" value="1">
+              <button class="btn btn-sm btn-primary btp w-100">Add to Order</button>
             </div>
           </div>
         </div>
@@ -1039,12 +786,12 @@
           <img src="images/Bakery-Style Apple Fritter Donuts.jpg" class="card-img-top imagesservice"
             alt="Apple Fritter Donut">
           <div class="card-body p-2 d-flex flex-column">
-            <h6 class="card-title">Apple Fritter <br>Donut</h6>
-            <p class="card-text small">Crispy and golden, filled with apple chunks and cinnamon.</p>
+            <h6 class="card-title ct">Apple Fritter <br>Donut</h6>
+            <p class="card-text ctx small">Crispy and golden, filled with apple chunks and cinnamon.</p>
             <p class="fw-bold mb-1">25 MAD</p>
             <div class="mt-auto">
-              <input type="number" class="form-control form-control-sm text-center mb-2" min="1" value="1">
-              <button class="btn btn-sm btn-primary w-100">Add to Order</button>
+              <input type="number" class="form-control fc form-control-sm text-center mb-2" min="1" value="1">
+              <button class="btn btn-sm btn-primary btp w-100">Add to Order</button>
             </div>
           </div>
         </div>
@@ -1056,12 +803,12 @@
           <img src="images/Strawberry Muffins - An Organized Chaos.jpg" class="card-img-top imagesservice"
             alt="Strawberry Muffins">
           <div class="card-body p-2 d-flex flex-column">
-            <h6 class="card-title">Strawberry Muffins <br>🍓</h6>
-            <p class="card-text small">Soft and fluffy muffin bursting with sweet, let's make it special! </p>
+            <h6 class="card-title ct">Strawberry Muffins <br>🍓</h6>
+            <p class="card-text ctx small">Soft and fluffy muffin bursting with sweet, let's make it special! </p>
             <p class="fw-bold mb-1">30 MAD</p>
             <div class="mt-auto">
-              <input type="number" class="form-control form-control-sm text-center mb-2" min="1" value="1">
-              <button class="btn btn-sm btn-primary w-100">Add to Order</button>
+              <input type="number" class="form-control fc form-control-sm text-center mb-2" min="1" value="1">
+              <button class="btn btn-sm btn-primary btp w-100">Add to Order</button>
             </div>
           </div>
         </div>
@@ -1073,12 +820,12 @@
           <img src="images/Double Chocolate Muffins.jpg" class="card-img-top imagesservice"
             alt="Double Chocolate Muffins">
           <div class="card-body p-2 d-flex flex-column">
-            <h6 class="card-title">Double Chocolate Muffins</h6>
-            <p class="card-text small">Rich and decadent, packed with chocolate chips and cocoa.</p>
+            <h6 class="card-title ct">Double Chocolate Muffins</h6>
+            <p class="card-text ctx small">Rich and decadent, packed with chocolate chips and cocoa.</p>
             <p class="fw-bold mb-1">35 MAD</p>
             <div class="mt-auto">
-              <input type="number" class="form-control form-control-sm text-center mb-2" min="1" value="1">
-              <button class="btn btn-sm btn-primary w-100">Add to Order</button>
+              <input type="number" class="form-control fc form-control-sm text-center mb-2" min="1" value="1">
+              <button class="btn btn-sm btn-primary btp w-100">Add to Order</button>
             </div>
           </div>
         </div>
@@ -1097,7 +844,7 @@
           <li>✔ Click confirm to proceed</li>
         </ul>
 
-        <a href="contact.html" class="btn btn-warning mt-3 w-100">Confirm Order
+        <a href="contact.html" class="btn btn-warning btw mt-3 w-100">Confirm Order
         </a>
       </div>
     </div>
@@ -1105,30 +852,11 @@
 
   </div>
 
-   <footer class="text-white py-4" style="background-color: #4A3628;">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-4 col-12  justify-content-center">
-                    <img src="images/logoo.png" alt="Bakery Logo" width="100px">
-                </div>
-                <div class="col-md-4 text-center col-12 justify-content-center mb-3">
-                    <h5 class="me-3">Follow Us:</h5><br>
-                    <a href="https://www.instagram.com/s.soufiane_2?igsh=c2J0c3Z3a2l3c3Fi" class=" me-3"><i
-                            class="fab fa-instagram fs-4"></i></a>
-                    <a href="https://www.linkedin.com/in/soufiane-inarain?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                        class="text-white"><i class="fab fa-linkedin fs-4"></i></a>
-                    <a href="https://www.facebook.com/share/1GZnmuH9AN/" class="text-white ms-3"><i
-                            class="fab fa-facebook fs-4"></i></a>
-                    <a href="https://github.com/SOUFIANE-X2" class="text-white ms-3"><i
-                            class="fab fa-github fs-4"></i></a>
-                </div>
-                <div class="col-md-4 text-md-end col-sm-12 d-flex justify-content-center">
-                    <small>&copy; 2026 Our Bakery. All rights reserved.</small>
-                </div>
-            </div>
-        </div>
-    </footer>
-  <script src="bootstrap.bundle.min.js"></script>
+  <footer>
+    <div class="text-center p-3">
+      &copy; 2025 Bakery. All rights reserved.
+    </div>
+  </footer>
+  <script src="js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
