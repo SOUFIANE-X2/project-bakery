@@ -263,3 +263,12 @@
         .gi:hover {
             transform: scale(1.02);
         }
+        .title-products {
+            margin-top: 90px;
+            text-align: center;
+            font-weight: 500;
+            font-family: 'Playfair Display', serif;
+            color: #5b3a10;
+            margin-bottom: 30px;    
+        }
+
