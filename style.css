@@ -1,4 +1,4 @@
- html {
+        html {
             scroll-behavior: smooth;
         }
 
@@ -90,24 +90,27 @@
         .card:hover {
             transform: scale(1.05);
         }
-        .card-statistique{
-            background: #fff5e6; 
+
+        .card-statistique {
+            background: #fff5e6;
             border-radius: 15px;
             box-shadow: 0 0px 10px #e98c3b;
             text-align: center;
             height: 300px !important;
         }
-         .card-statistique:hover{
+
+        .card-statistique:hover {
             transform: scale(1.05);
             box-shadow: 0 10px 30px #3e3325;
             transition: all 0.5s;
-           
+
 
         }
-        .t1{
+
+        .t1 {
             color: #3e3325;
         }
-        
+
         .accordion-button,
         .accordion-body {
             background-color: #fdf6e3;
@@ -130,21 +133,24 @@
             color: #fff;
             border: #3e3325;
         }
-        
-        .fa-instagram{
+
+        .fa-instagram {
             color: #e1306c;
         }
-        .fa-linkedin{
+
+        .fa-linkedin {
             color: #0e76a8;
         }
-        .fa-facebook{
+
+        .fa-facebook {
             color: #3b5998;
         }
-       
-        .fab:hover{
+
+        .fab:hover {
             transform: scale(1.2);
             transition: all 0.5s;
         }
+
         footer {
             background-color: #452203;
             color: #fff;
@@ -161,10 +167,11 @@
             height: auto;
             transition: transform 0.3s ease;
         }
+
         .form-contact:hover {
             transform: scale(1.02);
         }
-        
+
 
         .form-control {
             background: rgba(255, 255, 255, 0.2);
@@ -186,7 +193,8 @@
             opacity: 1;
             font-weight: 500;
         }
-        .form-control:hover{
+
+        .form-control:hover {
             transform: scale(1.02);
         }
 
@@ -202,7 +210,22 @@
         }
 
         .btn-secondary:active {
-            background-color: #3e3325 !important;
+            background-color: #877560 !important;
+        }
+
+        .btn-secondary {
+            background-color: #8c6e50;
+            border: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #8c6e50;
+            transform: scale(1.05);
+        }
+
+        .btn-primary:active {
+            background-color: #bc9768 !important;
         }
 
         #c {
@@ -213,24 +236,29 @@
         #c:hover {
             text-decoration: underline;
         }
+
         @keyframes fade-up {
             from {
                 transform: translateY(50px);
                 opacity: 0;
             }
+
             to {
                 transform: translateY(0);
                 opacity: 1;
             }
         }
+
         .fade-up {
             animation: fade-up 1s ease-in;
         }
-        .gi{
+
+        .gi {
             text-decoration: none;
             color: #4b3f2f;
             transition: transform 0.3s ease;
         }
+
         .gi:hover {
             transform: scale(1.02);
         }
