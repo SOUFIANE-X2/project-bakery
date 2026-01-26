@@ -1,4 +1,4 @@
-        html {
+ html {
             scroll-behavior: smooth;
         }
 
@@ -93,16 +93,19 @@
         .card-statistique{
             background: #fff5e6; 
             border-radius: 15px;
-            box-shadow: 0 10px 30px rgb(172, 226, 255);
+            box-shadow: 0 0px 10px #e98c3b;
             text-align: center;
             height: 300px !important;
         }
          .card-statistique:hover{
             transform: scale(1.05);
-            box-shadow: 0 10px 30px rgb(236, 178, 70);
+            box-shadow: 0 10px 30px #3e3325;
             transition: all 0.5s;
            
 
+        }
+        .t1{
+            color: #3e3325;
         }
         
         .accordion-button,
@@ -231,7 +234,3 @@
         .gi:hover {
             transform: scale(1.02);
         }
-        
-        
-        
-        
