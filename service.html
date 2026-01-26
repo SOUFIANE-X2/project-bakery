@@ -2,185 +2,227 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <title>Bakery</title>
-    <style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <title>Bakery</title>
+  <style>
     body {
-            background-image: url(/images/i1.jpg);
-            background-position: center;
-            background-size: cover;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            color: #4b3f2f;
-            color: #4b3f2f;
-            font: optional;
-            
-        }
+      background-image: url(images/i1.jpg);
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      color: #4b3f2f;
+      color: #4b3f2f;
+      font: optional;
+
+    }
+
     .navbar {
-            background-color: #594b3a;
-            opacity: 0.9999;
-            height: 70px ;
-            
-        }
+      background-color: #594b3a;
+      opacity: 0.9999;
+      height: 70px;
+
+    }
 
     .nav-link {
-            color: #fff !important;
-            font-family: Monotype Grotesque, sans-serif;
-            font-size: large;
+      color: #fff !important;
+      font-family: Monotype Grotesque, sans-serif;
+      font-size: large;
 
-        }
+    }
 
     .nav-link:hover {
-            text-decoration: underline;
-            color: beige !important;
-            opacity: 0.9;
-            transform: scale(1.1);
-            transition: all 0.3s ease;
-            
-            
-        }
-    .logo-img{
-            height: 60px !important;
-            width: auto !important;
-        }
-       
+      text-decoration: underline;
+      color: beige !important;
+      opacity: 0.9;
+      transform: scale(1.1);
+      transition: all 0.3s ease;
+
+
+    }
+
+    .logo-img {
+      height: 60px !important;
+      width: auto !important;
+    }
+
     .navbar-brand {
-            transition: transform 0.3s ease;
-            
-        }
-    .title-products{
-            margin-top: 90px;
-            text-align: center;
-            font-weight: 600;
-            font-family: 'Playfair Display', serif;
-            color: #000000;
-            margin-bottom: 30px;
-            
-        }
-    .Categories{
-            text-align: center;
-            font-family: 'Playfair Display', serif;
-            color: #642c12;
-            font-weight: 600;
-            
-        }
+      transition: transform 0.3s ease;
+
+    }
+
+    .title-products {
+      margin-top: 90px;
+      text-align: center;
+      font-weight: 600;
+      font-family: 'Playfair Display', serif;
+      color: #8c6e50;
+      margin-bottom: 30px;
+
+    }
+
+    .Categories {
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      color: #642c12;
+      font-weight: 600;
+
+    }
+
     .containerservce {
-        background-color: #fff;
-        border-radius: 10px;
-        box-shadow: 0px 0px 20px rgb(92, 91, 87);
-        opacity: 0.9;
-        margin-top: 10px;
-        margin-left: 50px;
-        margin-right: 50px; 
-        height: auto;
-        width: auto;
-        padding: 30px 40px 0px; 
-        
+      background-color: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(30px);
+      box-shadow: 0px 0px 20px rgb(92, 91, 87);
+      border-radius: 10px;
+      margin-top: 10px;
+      margin-left: 50px;
+      margin-right: 50px;
+      height: auto;
+      width: auto;
+      padding: 30px 40px 0px;
+      backdrop-filter: blur(30px);
+
+
     }
 
 
     .card {
-        box-shadow: 0px 0px 20px rgb(146, 117, 1);
-        padding-bottom: 10px;
-      
+      box-shadow: 0px 0px 10px #642c12;
+      padding-bottom: 10px;
+      background: #dfe8c8;
+
     }
+
     .card:hover {
-        transform: scale(1.03);
-        transition: all 0.5s ease;
-        box-shadow: 0px 0px 20px rgb(216, 117, 3);
+      transform: scale(1.03);
+      transition: all 0.5s ease;;
     }
 
 
     .card img {
-        height: 280px auto;
-        width: 100%;
-    
+      height: 280px auto;
+      width: 100%;
+
     }
     .card-title{
         font-family: sans-serif;
-        font-size: 1.7rem;
+        font-size: 2rem;
         color:#594b3a ;
         font-weight: 600;
         
 
     }
-    .card-title:hover{
-        color: rgb(171, 79, 42);
-        transition: all 0.6s ease;
-        transform: scale(0.95);
+
+    .card-title:hover {
+      color: rgb(171, 79, 42);
+      transition: all 0.6s ease;
+      transform: scale(0.95);
     }
 
-    .card-text{
-        font-family: 'sans-serif';
-        font-size: 1.1rem;
-        color: #4b3f2f;
+    .card-text {
+      font-family: 'sans-serif';
+      font-size: 1.1rem;
+      color: #4b3f2f;
     }
 
+    .form-control {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(30px);
+      border: solid 1px rgb(171, 79, 42);
+    }
+
+    .form-control:focus {
+      background: #fff;
+      box-shadow: none;
+      border: #594b3a;
+    }
     .btn-primary {
-        background-color: rgb(171, 79, 42);
-        border: none;
-        margin-top: auto; 
-        
-    
+      background-color: rgb(171, 79, 42);
+      border: none;
+      margin-top: auto;
+      width: 215px !important;
     }
 
     .btn-primary:hover {
-        background-color: rgb(215, 104, 60);
-        transform: scale(1.1);
-        transition: all 0.3s ease;
+      background-color: rgb(215, 104, 60);
+      transform: scale(1.1);
+      transition: all 0.3s ease;
     }
 
 
     @media (max-width: 992px) {
-        .containerservce {
+      .containerservce {
         margin-left: 20px;
         margin-right: 20px;
         padding: 20px;
-        }
-    
-        .col-md-3 {
-        flex: 0 0 50%; 
+      }
+
+      .col-md-3 {
+        flex: 0 0 50%;
         max-width: 50%;
+      }
     }
-}
 
     @media (max-width: 768px) {
-        .containerservce {
-            margin-left: 15px;
-            margin-right: 15px;
-            padding: 15px;
-    }
-    
-    .col-md-3 {
-        flex: 0 0 100%; 
+      .containerservce {
+        margin-left: 15px;
+        margin-right: 15px;
+        padding: 15px;
+      }
+
+      .col-md-3 {
+        flex: 0 0 100%;
         max-width: 100%;
+      }
+
+
     }
-    
-   
-    }
-    .imagesservice{
+    .imagebread{
         height: 340px !important;
         width: 100%!important;
 
     }
-    
     .range{
         font-size: 1.2rem;
         font-family: sans-serif;
         font-weight: 500;
         margin-right: 20px;
     }
-    .btn-warning{
-        background-color: rgb(255, 215, 15);
+
+    .btn-warning {
+      background-color: #8c6e50;
+      border: solid 1px #7e6f5a;
+      color: #fff;
     }
+    .btn-warning:hover {
+      background-color: #4b3f2f;
+      border: solid 1px #7e6f5a;
+      color: #fff;
+    }
+    .btn-warning:active {
+      background-color: #baa488 !important;
+      border: none !important;
+      color: #fff !important;
+    }
+    .confirm{
+      padding-top: 25px;
+      padding-left: 15px;
+      margin-left: 40px;
+      width: 498px;
+    }
+    .containerservce {
+      backdrop-filter: blur(30px);
+    }
+
     footer {
-        background-color: #4b3f2f;
-        color: #fff;
-            
+      background-color: #4b3f2f;
+      color: #fff;
+
     }
-        /*.containerservce{
+
+    /*.containerservce{
             background-color: #fff;
             border-radius: 10px;
             box-shadow: 0px 0px 20px rgb(92, 91, 87);
@@ -220,78 +262,80 @@
             color: #fff;
             
         }*/
-    </style>
+  </style>
 
 
-   
+
 </head>
 
 <body>
-<header>
+  <header>
     <nav class="navbar navbar-expand-lg fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand fw-bold text-white" href="index.html"><img class="logo-img" src="images/logoo.png" alt="Bakey Logo">
-                </a>
-                
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#m">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold text-white" href="index.html"><img class="logo-img" src="images/logoo.png"
+            alt="Bakey Logo">
+        </a>
 
-                <div class="collapse navbar-collapse" id="m">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="service.html">Products</a></li>
-                        <li class="nav-item"><a class="nav-link" href="galerie.html">Galerie</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-</header>
-    <h1 class=" display-1 title-products"> Our Delecious Products</h1>
-    <div class="container-fluid">
-        <div class="containerservce">
-    <h2 class="fs-1 Categories mb-4">Categories</h2>
-    <div class="row">
-        
-        <div class="col-md-3 mb-4">
-            <h2 class="fw-bold fs-3 text-center text-danger mb-4">🥖 Breads</h2>
-            <div class="card" style="width: 100%;"> 
-                <img src="images/breads.jpg" class="card-img-top" alt="Breads">
-                <div class="card-body text-center">
-                    <h5 class="card-title ">Breads Category</h5>
-                    <p class="card-text ">Delicious Parisienne bread with a crispy crust and soft interior.let's explore more.</p>
-                    <a href="#breads" class="btn btn-primary">Find More</a>
-                </div>
-            </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#m">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="m">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="service.html">Products</a></li>
+            <li class="nav-item"><a class="nav-link" href="galerie.html">Galerie</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
         </div>
-        
+      </div>
+    </nav>
+  </header>
+  <h1 class=" display-1 title-products"> Our Delecious Products</h1>
+  <div class="container-fluid">
+    <div class="containerservce pb-5 mb-5">
+      <h2 class="fs-1 Categories mb-4">Categories</h2>
+      <div class="row">
+
         <div class="col-md-3 mb-4">
-            <h2 class="fw-bold fs-3 text-center text-danger mb-4">🎂 Cakes</h2>
-            <div class="card" style="width: 100%;"> 
-                <img src="images/cakes.png" class="card-img-top" alt="Cake 1">
-                <div class="card-body text-center">
-                    <h5 class="card-title "> Cakes Category</h5>
-                    <p class="card-text ">Rich chocolate cake with layers of moist sponge and creamy frosting.let's explore more.</p>
-                    <a href="#cakes" class="btn btn-primary">Find More</a>
-                </div>
+          <h2 class="fw-bold fs-3 text-center text-danger mb-4">🥖 Breads</h2>
+          <div class="card" style="width: 100%;">
+            <img src="images/breads.jpg" class="card-img-top" alt="Breads">
+            <div class="card-body text-center">
+              <h5 class="card-title ">Breads Category</h5>
+              <p class="card-text ">Delicious Parisienne bread with a crispy crust and soft interior.let's explore more.
+              </p>
+              <a href="#breads" class="btn btn-primary">Find More</a>
             </div>
+          </div>
         </div>
-        
+
         <div class="col-md-3 mb-4">
-            <h2 class="fw-bold fs-3 text-center text-danger mb-4">🍪 Cookies</h2>
-            <div class="card" style="width: 100%;"> 
-                <img src="images/cookies.jpg" class="card-img-top" alt="Cookies">
-                <div class="card-body text-center">
-                    <h5 class="card-title ">Cookies Category</h5>
-                    <p class="card-text">Classic cookies loaded with chocolate chips and a perfect balance of sweetness.</p>
-                    <a href="#cookies" class="btn btn-primary">Find More</a>
-                </div>
+          <h2 class="fw-bold fs-3 text-center text-danger mb-4">🎂 Cakes</h2>
+          <div class="card" style="width: 100%;">
+            <img src="images/cakes.png" class="card-img-top" alt="Cake 1">
+            <div class="card-body text-center">
+              <h5 class="card-title "> Cakes Category</h5>
+              <p class="card-text ">Rich chocolate cake with layers of moist sponge and creamy frosting.</p>
+              <a href="#cakes" class="btn btn-primary">Find More</a>
             </div>
+          </div>
         </div>
-        
+
         <div class="col-md-3 mb-4">
-            <h2 class="fw-bold fs-3 text-center text-danger mb-4">🍩 Donuts / 🥧muffin </h2> 
+          <h2 class="fw-bold fs-3 text-center text-danger mb-4">🍪 Cookies</h2>
+          <div class="card" style="width: 100%;">
+            <img src="images/cookies.jpg" class="card-img-top" alt="Cookies">
+            <div class="card-body text-center">
+              <h5 class="card-title ">Cookies Category</h5>
+              <p class="card-text">Classic cookies loaded with chocolate chips and a perfect balance of sweetness.</p>
+              <a href="#cookies" class="btn btn-primary">Find More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 mb-4">
+            <h2 class="fw-bold fs-3 text-center text-danger mb-4">🍩 Donuts</h2> 
             <div class="card" style="width: 100%;"> 
                 <img src="images/donuts.png" class="card-img-top" alt="donuts">
                 <div class="card-body text-center">
@@ -301,10 +345,10 @@
                 </div>
             </div>
         </div>
+      </div>
     </div>
-</div>
-<br> <br>
-    <!-- <div class="containerservce">
+    <br> <br>
+    <!-- <div class="containerservce pb-5 mb-5">
 
         <h2 class="fs-1 Categories mb-4">Categories</h2>
         <div class="row">
@@ -355,13 +399,13 @@
 
     </div>
     </div>-->
-<div class="containerservce">
-  <h2 class="fs-1 Categories mb-4" id="breads">Breads Products</h2>
+    <div class="containerservce pb-5 mb-5">
+      <h2 class="fs-1 Categories mb-4" id="breads">Breads Products</h2>
 
   <div class="row g-3">
     <div class="col-lg-3 col-md-4 col-sm-6">
-      <div class="card  h-100 text-center">
-        <img src="images/b1.jpg" class="card-img-top imagesservice" alt="Foccacia">
+      <div class="card cardbg-color h-100 text-center">
+        <img src="images/b1.jpg" class="card-img-top imagebread" alt="Foccacia">
         <div class="card-body p-2">
           <h6 class="card-title">Foccacia</h6>
           <p class="card-text small">Flat Italian bread with olive oil and herbs.</p>
@@ -374,8 +418,8 @@
 
   
     <div class="col-lg-3 col-md-4 col-sm-6">
-      <div class="card  h-100 text-center">
-        <img src="images/b2.jpg" class="card-img-top imagesservice" alt="Ciabatta">
+      <div class="card cardbg-color h-100 text-center">
+        <img src="images/b2.jpg" class="card-img-top imagebread" alt="Ciabatta">
         <div class="card-body p-2">
           <h6 class="card-title">Ciabatta</h6>
           <p class="card-text small">Italian bread with crispy crust and soft inside.</p>
@@ -388,8 +432,8 @@
 
     
     <div class="col-lg-3 col-md-4 col-sm-6">
-      <div class="card  h-100 text-center">
-        <img src="images/b3.jpg" class="card-img-top imagesservice" alt="Sourdough">
+      <div class="card cardbg-color h-100 text-center">
+        <img src="images/b3.jpg" class="card-img-top imagebread" alt="Sourdough">
         <div class="card-body p-2">
           <h6 class="card-title">Sourdough Bread</h6>
           <p class="card-text small">Naturally fermented with rich flavor.</p>
@@ -402,8 +446,8 @@
 
   
     <div class="col-lg-3 col-md-4 col-sm-6">
-      <div class="card  h-100 text-center">
-        <img src="images/b4.jpg" class="card-img-top imagesservice" alt="White Bread">
+      <div class="card cardbg-color h-100 text-center">
+        <img src="images/b4.jpg" class="card-img-top imagebread" alt="White Bread">
         <div class="card-body p-2">
           <h6 class="card-title">White Bread</h6>
           <p class="card-text small">Soft and fluffy for sandwiches.</p>
@@ -416,8 +460,8 @@
 
     
     <div class="col-lg-3 col-md-4 col-sm-6">
-      <div class="card  h-100 text-center">
-        <img src="images/b5.jpg" class="card-img-top imagesservice" alt="Multigrain">
+      <div class="card cardbg-color h-100 text-center">
+        <img src="images/b5.jpg" class="card-img-top imagebread" alt="Multigrain">
         <div class="card-body p-2">
           <h6 class="card-title">Multigrain Bread</h6>
           <p class="card-text small">Healthy bread with mixed grains.</p>
@@ -430,8 +474,8 @@
 
   
     <div class="col-lg-3 col-md-4 col-sm-6">
-      <div class="card  h-100 text-center">
-        <img src="images/b6.jpg" class="card-img-top imagesservice" alt="Rye Bread">
+      <div class="card cardbg-color h-100 text-center">
+        <img src="images/b6.jpg" class="card-img-top imagebread" alt="Rye Bread">
         <div class="card-body p-2">
           <h6 class="card-title">Rye Bread</h6>
           <p class="card-text small">Dense bread with strong taste.</p>
@@ -444,8 +488,8 @@
 
    
     <div class="col-lg-3 col-md-4 col-sm-6">
-      <div class="card  h-100 text-center">
-        <img src="images/b7.jpg" class="card-img-top imagesservice" alt="Baguette">
+      <div class="card cardbg-color h-100 text-center">
+        <img src="images/b7.jpg" class="card-img-top imagebread" alt="Baguette">
         <div class="card-body p-2">
           <h6 class="card-title">Baguette</h6>
           <p class="card-text small">Classic French crispy bread.</p>
@@ -458,8 +502,8 @@
 
     
     <div class="col-lg-3 col-md-4 col-sm-6">
-      <div class="card  h-100 text-center">
-        <img src="images/b8.jpg" class="card-img-top imagesservice" alt="Whole Wheat">
+      <div class="card cardbg-color h-100 text-center">
+        <img src="images/b8.jpg" class="card-img-top imagebread" alt="Whole Wheat">
         <div class="card-body p-2">
           <h6 class="card-title">Whole Wheat Bread</h6>
           <p class="card-text small">Nutty flavor, high fiber.</p>
@@ -472,8 +516,8 @@
 
    
     <div class="col-lg-3 col-md-4 col-sm-6">
-      <div class="card  h-100 text-center">
-        <img src="images/b9.jpg" class="card-img-top imagesservice" alt="Brioche">
+      <div class="card cardbg-color h-100 text-center">
+        <img src="images/b9.jpg" class="card-img-top imagebread" alt="Brioche">
         <div class="card-body p-2">
           <h6 class="card-title">Brioche</h6>
           <p class="card-text small">Sweet and buttery bread.</p>
@@ -486,8 +530,8 @@
 
     
     <div class="col-lg-3 col-md-4 col-sm-6">
-      <div class="card  h-100 text-center">
-        <img src="images/b10.jpg" class="card-img-top imagesservice" alt="Pita Bread">
+      <div class="card cardbg-color h-100 text-center">
+        <img src="images/b10.jpg" class="card-img-top imagebread" alt="Pita Bread">
         <div class="card-body p-2">
           <h6 class="card-title">Pita Bread</h6>
           <p class="card-text small">Perfect for wraps and sandwiches.</p>
@@ -500,31 +544,31 @@
     <div class="card col-lg-6 col-md-4 col-sm h-100">
         <h4 class="mb-3">Confirm Your Order</h4>
 
-        <p class="small text-muted">
+          <p class="small text-muted">
             Please review your selected bread products and quantities.
             Once you are ready, confirm your order by contacting us.
-        </p>
+          </p>
 
-        <ul class="list-unstyled small">
+          <ul class="list-unstyled small">
             <li>✔ Select your favorite breads</li>
             <li>✔ Choose the desired quantity</li>
             <li>✔ Click confirm to proceed</li>
-        </ul>
+          </ul>
 
-        <a href="contact.html" class="btn btn-warning mt-3 w-100">Confirm Order
-        </a>
+          <a href="contact.html" class="btn btn-warning mt-3 w-100">Confirm Order
+          </a>
+        </div>
+
+
+      </div>
     </div>
-
-
-  </div>
-</div>
-<div class="containerservce">
-  <h2 class="fs-1 Categories mb-4" id="cakes">cakes Products</h2>
+    <div class="containerservce pb-5 mb-5">
+      <h2 class="fs-1 Categories mb-4" id="cakes">cakes Products</h2>
 
   <div class="row g-3">
     <div class="col-lg-3 col-md-4 col-sm-6">
-      <div class="card  h-100 text-center">
-        <img src="images/choclate cake.jpg" class="card-img-top imagesservice" alt="choclate cake">
+      <div class="card cardbg-color h-100 text-center">
+        <img src="images/choclate cake.jpg" class="card-img-top imagebread" alt="Foccacia">
         <div class="card-body p-2">
           <h6 class="card-title">choclate cake</h6>
           <p class="card-text small">Rich, moist, and made with cocoa or melted chocolate</p>
@@ -537,11 +581,11 @@
 
   
     <div class="col-lg-3 col-md-4 col-sm-6">
-      <div class="card  h-100 text-center">
-        <img src="images/vanilla cake.jpg" class="card-img-top imagesservice" alt="vanilla cake">
+      <div class="card cardbg-color h-100 text-center">
+        <img src="images/vanilla cake.jpg" class="card-img-top imagebread" alt="Ciabatta">
         <div class="card-body p-2">
           <h6 class="card-title">vanilla cake</h6>
-          <p class="card-text small">Light and fluffy, perfect for celebrations ,let's make it special!</p>
+          <p class="card-text small">Light and fluffy, perfect for celebrations.</p>
           <p class="fw-bold mb-1">25 MAD</p>
           <input type="number" class="form-control form-control-sm text-center mb-2" min="1" value="1">
           <button class="btn btn-sm btn-primary w-100">Add to Order</button>
@@ -551,11 +595,11 @@
 
     
     <div class="col-lg-3 col-md-4 col-sm-6">
-      <div class="card  h-100 text-center">
-        <img src="images/Red Velvet Cake.jpg" class="card-img-top imagesservice" alt="Red Velvet Cake">
+      <div class="card cardbg-color h-100 text-center">
+        <img src="images/Red Velvet Cake.jpg" class="card-img-top imagebread" alt="Sourdough">
         <div class="card-body p-2">
           <h6 class="card-title">Red Velvet Cake</h6>
-          <p class="card-text small">Moist and rich with a hint of cocoa flavor let's make it special!</p>
+          <p class="card-text small">Moist and rich with a hint of cocoa flavor.</p>
           <p class="fw-bold mb-1">30 MAD</p>
           <input type="number" class="form-control form-control-sm text-center mb-2" min="1" value="1">
           <button class="btn btn-sm btn-primary w-100">Add to Order</button>
@@ -565,8 +609,8 @@
 
   
     <div class="col-lg-3 col-md-4 col-sm-6">
-      <div class="card  h-100 text-center">
-        <img src="images/Cheesecake.jpg" class="card-img-top imagesservice" alt="Cheesecake">
+      <div class="card cardbg-color h-100 text-center">
+        <img src="images/Cheesecake.jpg" class="card-img-top imagebread" alt="White Bread">
         <div class="card-body p-2">
           <h6 class="card-title">Cheesecake</h6>
           <p class="card-text small">Creamy and smooth, often served with fruit toppings.</p>
@@ -579,11 +623,11 @@
 
     
     <div class="col-lg-3 col-md-4 col-sm-6">
-      <div class="card  h-100 text-center">
-        <img src="images/Black Forest Cake.jpg" class="card-img-top imagesservice" alt="Black Forest Cake">
+      <div class="card cardbg-color h-100 text-center">
+        <img src="images/Black Forest Cake.jpg" class="card-img-top imagebread" alt="Multigrain">
         <div class="card-body p-2">
           <h6 class="card-title">Black Forest Cake</h6>
-          <p class="card-text small">Moist and rich with a hint of cocoa flavor, let's make it special!</p>
+          <p class="card-text small">Moist and rich with a hint of cocoa flavor.</p>
           <p class="fw-bold mb-1">30 MAD</p>
           <input type="number" class="form-control form-control-sm text-center mb-2" min="1" value="1">
           <button class="btn btn-sm btn-primary w-100">Add to Order</button>
@@ -593,11 +637,11 @@
 
   
     <div class="col-lg-3 col-md-4 col-sm-6">
-      <div class="card  h-100 text-center">
-        <img src="images/Mille-Feuille Cake.jpg" class="card-img-top imagesservice" alt="Mille-Feuille Cake">
+      <div class="card cardbg-color h-100 text-center">
+        <img src="images/Mille-Feuille Cake.jpg" class="card-img-top imagebread" alt="Rye Bread">
         <div class="card-body p-2">
           <h6 class="card-title">Mille-Feuille Cake</h6>
-          <p class="card-text small">Delicate layers of pastry cream and fruit let's make it special!</p>
+          <p class="card-text small">Delicate layers of pastry cream and fruit.</p>
           <p class="fw-bold mb-1">40 MAD</p>
           <input type="number" class="form-control form-control-sm text-center mb-2" min="1" value="1">
           <button class="btn btn-sm btn-primary w-100">Add to Order</button>
@@ -607,8 +651,8 @@
 
    
     <div class="col-lg-3 col-md-4 col-sm-6">
-      <div class="card  h-100 text-center">
-        <img src="images/Lemon Cake.jpg" class="card-img-top imagesservice" alt="Lemon Cake">
+      <div class="card cardbg-color h-100 text-center">
+        <img src="images/Lemon Cake.jpg" class="card-img-top imagebread" alt="Baguette">
         <div class="card-body p-2">
           <h6 class="card-title">Lemon Cake</h6>
           <p class="card-text small">Light and refreshing, perfect for a sweet treat.</p>
@@ -621,8 +665,8 @@
 
     
     <div class="col-lg-3 col-md-4 col-sm-6">
-      <div class="card  h-100 text-center">
-        <img src="images/Fruit Cake.jpg" class="card-img-top imagesservice" alt="Fruit Cake">
+      <div class="card cardbg-color h-100 text-center">
+        <img src="images/Fruit Cake.jpg" class="card-img-top imagebread" alt="Whole Wheat">
         <div class="card-body p-2">
           <h6 class="card-title">Fruit Cake</h6>
           <p class="card-text small">Rich, moist, and made with cocoa or melted chocolate</p>
@@ -635,11 +679,11 @@
 
    
     <div class="col-lg-3 col-md-4 col-sm-6">
-      <div class="card  h-100 text-center">
-        <img src="images/Coffee Cake.jpg" class="card-img-top imagesservice" alt="Coffee Cake">
+      <div class="card cardbg-color h-100 text-center">
+        <img src="images/Coffee Cake.jpg" class="card-img-top imagebread" alt="Brioche">
         <div class="card-body p-2">
           <h6 class="card-title">Coffee Cake</h6>
-          <p class="card-text small">Moist and rich with a hint of cocoa flavor, let's make it special!</p>
+          <p class="card-text small">Moist and rich with a hint of cocoa flavor.</p>
           <p class="fw-bold mb-1">30 MAD</p>
           <input type="number" class="form-control form-control-sm text-center mb-2" min="1" value="1">
           <button class="btn btn-sm btn-primary w-100">Add to Order</button>
@@ -649,8 +693,8 @@
 
     
     <div class="col-lg-3 col-md-4 col-sm-6">
-      <div class="card  h-100 text-center">
-        <img src="images/Tiramisu Cake.jpg" class="card-img-top imagesservice" alt="Tiramisu Cake">
+      <div class="card cardbg-color h-100 text-center">
+        <img src="images/Tiramisu Cake.jpg" class="card-img-top imagebread" alt="Pita Bread">
         <div class="card-body p-2">
           <h6 class="card-title">Tiramisu Cake</h6>
           <p class="card-text small">Creamy and smooth, often served with fruit toppings.</p>
@@ -663,20 +707,20 @@
     <div class="card col-lg-6 col-md-4 col-sm h-100">
         <h4 class="mb-3">Confirm Your Order</h4>
 
-        <p class="small text-muted">
+          <p class="small text-muted">
             Please review your selected bread products and quantities.
             Once you are ready, confirm your order by contacting us.
-        </p>
+          </p>
 
-        <ul class="list-unstyled small">
+          <ul class="list-unstyled small">
             <li>✔ Select your favorite breads</li>
             <li>✔ Choose the desired quantity</li>
             <li>✔ Click confirm to proceed</li>
-        </ul>
+          </ul>
 
-        <a href="contact.html" class="btn btn-warning mt-3 w-100">Confirm Order
-        </a>
-    </div>
+          <a href="contact.html" class="btn btn-warning mt-3 w-100">Confirm Order
+          </a>
+        </div>
 
 
   </div>
@@ -842,15 +886,15 @@
     </div>
 
 
-  </div>
-</div>
-<div class="containerservce">
-  <h2 class="fs-1 Categories mb-4" id="breads">Breads Products</h2>
+      </div>
+    </div>
+    <div class="containerservce pb-5 mb-5">
+      <h2 class="fs-1 Categories mb-4" id="breads">Breads Products</h2>
 
   <div class="row g-3">
     <div class="col-lg-3 col-md-4 col-sm-6">
-      <div class="card  h-100 text-center">
-        <img src="images/b1.jpg" class="card-img-top imagesservice" alt="Foccacia">
+      <div class="card cardbg-color h-100 text-center">
+        <img src="images/b1.jpg" class="card-img-top imagebread" alt="Foccacia">
         <div class="card-body p-2">
           <h6 class="card-title">Foccacia</h6>
           <p class="card-text small">Flat Italian bread with olive oil and herbs.</p>
@@ -863,8 +907,8 @@
 
   
     <div class="col-lg-3 col-md-4 col-sm-6">
-      <div class="card  h-100 text-center">
-        <img src="images/b2.jpg" class="card-img-top imagesservice" alt="Ciabatta">
+      <div class="card cardbg-color h-100 text-center">
+        <img src="images/b2.jpg" class="card-img-top imagebread" alt="Ciabatta">
         <div class="card-body p-2">
           <h6 class="card-title">Ciabatta</h6>
           <p class="card-text small">Italian bread with crispy crust and soft inside.</p>
@@ -877,8 +921,8 @@
 
     
     <div class="col-lg-3 col-md-4 col-sm-6">
-      <div class="card  h-100 text-center">
-        <img src="images/b3.jpg" class="card-img-top imagesservice" alt="Sourdough">
+      <div class="card cardbg-color h-100 text-center">
+        <img src="images/b3.jpg" class="card-img-top imagebread" alt="Sourdough">
         <div class="card-body p-2">
           <h6 class="card-title">Sourdough Bread</h6>
           <p class="card-text small">Naturally fermented with rich flavor.</p>
@@ -891,8 +935,8 @@
 
   
     <div class="col-lg-3 col-md-4 col-sm-6">
-      <div class="card  h-100 text-center">
-        <img src="images/b4.jpg" class="card-img-top imagesservice" alt="White Bread">
+      <div class="card cardbg-color h-100 text-center">
+        <img src="images/b4.jpg" class="card-img-top imagebread" alt="White Bread">
         <div class="card-body p-2">
           <h6 class="card-title">White Bread</h6>
           <p class="card-text small">Soft and fluffy for sandwiches.</p>
@@ -905,8 +949,8 @@
 
     
     <div class="col-lg-3 col-md-4 col-sm-6">
-      <div class="card  h-100 text-center">
-        <img src="images/b5.jpg" class="card-img-top imagesservice" alt="Multigrain">
+      <div class="card cardbg-color h-100 text-center">
+        <img src="images/b5.jpg" class="card-img-top imagebread" alt="Multigrain">
         <div class="card-body p-2">
           <h6 class="card-title">Multigrain Bread</h6>
           <p class="card-text small">Healthy bread with mixed grains.</p>
@@ -919,8 +963,8 @@
 
   
     <div class="col-lg-3 col-md-4 col-sm-6">
-      <div class="card  h-100 text-center">
-        <img src="images/b6.jpg" class="card-img-top imagesservice" alt="Rye Bread">
+      <div class="card cardbg-color h-100 text-center">
+        <img src="images/b6.jpg" class="card-img-top imagebread" alt="Rye Bread">
         <div class="card-body p-2">
           <h6 class="card-title">Rye Bread</h6>
           <p class="card-text small">Dense bread with strong taste.</p>
@@ -933,8 +977,8 @@
 
    
     <div class="col-lg-3 col-md-4 col-sm-6">
-      <div class="card  h-100 text-center">
-        <img src="images/b7.jpg" class="card-img-top imagesservice" alt="Baguette">
+      <div class="card cardbg-color h-100 text-center">
+        <img src="images/b7.jpg" class="card-img-top imagebread" alt="Baguette">
         <div class="card-body p-2">
           <h6 class="card-title">Baguette</h6>
           <p class="card-text small">Classic French crispy bread.</p>
@@ -947,8 +991,8 @@
 
     
     <div class="col-lg-3 col-md-4 col-sm-6">
-      <div class="card  h-100 text-center">
-        <img src="images/b8.jpg" class="card-img-top imagesservice" alt="Whole Wheat">
+      <div class="card cardbg-color h-100 text-center">
+        <img src="images/b8.jpg" class="card-img-top imagebread" alt="Whole Wheat">
         <div class="card-body p-2">
           <h6 class="card-title">Whole Wheat Bread</h6>
           <p class="card-text small">Nutty flavor, high fiber.</p>
@@ -961,8 +1005,8 @@
 
    
     <div class="col-lg-3 col-md-4 col-sm-6">
-      <div class="card  h-100 text-center">
-        <img src="images/b9.jpg" class="card-img-top imagesservice" alt="Brioche">
+      <div class="card cardbg-color h-100 text-center">
+        <img src="images/b9.jpg" class="card-img-top imagebread" alt="Brioche">
         <div class="card-body p-2">
           <h6 class="card-title">Brioche</h6>
           <p class="card-text small">Sweet and buttery bread.</p>
@@ -975,8 +1019,8 @@
 
     
     <div class="col-lg-3 col-md-4 col-sm-6">
-      <div class="card  h-100 text-center">
-        <img src="images/b10.jpg" class="card-img-top imagesservice" alt="Pita Bread">
+      <div class="card cardbg-color h-100 text-center">
+        <img src="images/b10.jpg" class="card-img-top imagebread" alt="Pita Bread">
         <div class="card-body p-2">
           <h6 class="card-title">Pita Bread</h6>
           <p class="card-text small">Perfect for wraps and sandwiches.</p>
@@ -989,20 +1033,20 @@
     <div class="card col-lg-6 col-md-4 col-sm h-100">
         <h4 class="mb-3">Confirm Your Order</h4>
 
-        <p class="small text-muted">
+          <p class="small text-muted">
             Please review your selected bread products and quantities.
             Once you are ready, confirm your order by contacting us.
-        </p>
+          </p>
 
-        <ul class="list-unstyled small">
+          <ul class="list-unstyled small">
             <li>✔ Select your favorite breads</li>
             <li>✔ Choose the desired quantity</li>
             <li>✔ Click confirm to proceed</li>
-        </ul>
+          </ul>
 
-        <a href="contact.html" class="btn btn-warning mt-3 w-100">Confirm Order
-        </a>
-    </div>
+          <a href="contact.html" class="btn btn-warning mt-3 w-100">Confirm Order
+          </a>
+        </div>
 
 
   </div>
@@ -1168,17 +1212,16 @@
     </div>
 
 
+      </div>
+    </div>
+
   </div>
-</div>
 
-</div>
-
-    <footer>
-        <div class="text-center p-3">
-            &copy; 2025 Bakery. All rights reserved.
-        </div>
-    </footer>
-    <script src="bootstrap.bundle.min.js"></script>
+  <footer>
+    <div class="text-center p-3">
+      &copy; 2025 Bakery. All rights reserved.
+    </div>
+  </footer>
+  <script src="bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
