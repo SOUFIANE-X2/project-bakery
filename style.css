@@ -267,7 +267,7 @@
             margin-top: 90px;
             text-align: center;
             font-weight: 500;
-            font-family: 'Playfair Display', serif;
+            font-family:serif;
             color: #5b3a10;
             margin-bottom: 30px;    
         }
@@ -278,9 +278,10 @@
             border-radius: 10px;
             box-shadow: 0 4px 30px rgb(126, 82, 19);
         }
+  
         .img-bakery {
             width: 100%;
-            height: 280px;
+            height: 300px;
             border-radius: 15px; 
             
         }
