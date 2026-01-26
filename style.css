@@ -504,15 +504,9 @@
             color: #5b3a10;
             margin-bottom: 30px;
         }
-<<<<<<< HEAD
         
         .gallery{
             background-color:rgb(236, 175, 62);
-=======
-
-        .gallery {
-            background-color: rgb(255, 255, 255);
->>>>>>> 66ef20d97e96898db349d11fd8e3521cff724941
             padding: 3rem;
             border-radius: 10px;
             box-shadow: 0 4px 30px rgb(126, 82, 19);
