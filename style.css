@@ -42,6 +42,19 @@
                 border-radius: 0;
             }
         }
+        .login{
+            background-color: #8B5A2B;
+            border-radius: 8px;
+            color: #FFF3E0;
+            border: none;
+            padding: 8px 18px;
+            font-weight: 600;
+
+        }
+        .login:hover{
+            background-color: #6F4518;
+            transform: t;
+        }
 
         .logo-img {
             height: 60px !important;
@@ -458,12 +471,12 @@
             background-color: #bc9768 !important;
         }
 
-        #c {
+        .c {
             text-decoration: none;
             color: inherit;
         }
 
-        #c:hover {
+        .c:hover {
             text-decoration: underline;
         }
 
@@ -525,5 +538,18 @@
             transition: box-shadow 0.5s ease;
             transition: 0.5s all;
         }
-        
+        .input-grp{
+            position: relative;
+            width:100%;
+        }
+        .input-grp i{
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+
+        }
+        .input-grp input {
+            padding-left: 38px;
+        }
 
