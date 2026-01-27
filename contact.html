@@ -34,6 +34,7 @@
             </div>
         </nav>
     </header>
+<main>
     <section>
         <div class="position-relative overflow-hidden vh-100 w-100">
             <img src="images/i1.jpg" class="img-fluid w-100 bgback" id="im1">
@@ -57,17 +58,27 @@
                                 <a href="contact.html" class="c"><i class="fa-solid fa-address-book"></i>Contact Us</a>
                             </h2>
                             <div>
-                                <input type="text" class="form-control fcc mb-3 rounded-pill" placeholder="Your Name"
+                                <div class="input-grp">
+                                    <i class="fa-solid fa-user"></i>
+                                    <input type="text" class="form-control fcc mb-3 rounded-pill" placeholder="Name"
                                     required>
-                                <input type="email" class="form-control fcc mb-3 rounded-pill" placeholder="Your Email"
+                                </div>
+                                <div class="input-grp">
+                                    
+                                    <i class="fa-solid fa-envelope"></i><input type="email" class="form-control fcc mb-3 rounded-pill" placeholder="Email"
                                     required>
-                                <textarea class="form-control fcc mb-3 rounded-3" rows="2" placeholder="Your Message"
+                                </div>
+                                <div class="input-grp">
+                                    <i class="fa-solid fa-message"></i>
+                                    <textarea class="form-control fcc mb-3 rounded-3" rows="2" placeholder="      Your Message"
                                     required></textarea>
+                                </div>
+                                
                                 <div class="row d-flex justify-content-center gap-3">
                                     <button type="reset"
                                         class="btn btn-secondary btn-sm w-25 col-6 col-sm-12">Reset</button>
                                     <button type="submit"
-                                        class="btn btn-primary btn-sm w-25 col-6 col-sm-12">Send</button>
+                                        class="btn btn-success btn-sm w-25 col-6 col-sm-12">Send</button>
                                 </div>
                             </div>
                         </form>
@@ -76,7 +87,7 @@
             </div>
 
     </section>
-
+</main>
      <footer class="text-white py-4" style="background-color: #4A3628;">
         <div class="container">
             <div class="row align-items-center ">

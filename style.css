@@ -81,7 +81,7 @@
         }
 
 
-        #f1 {
+        .f1 {
             color: #4b3f2f;
             font-weight: 700;
         }
@@ -203,8 +203,8 @@
         .title-products {
             margin-top: 90px;
             text-align: center;
-            font-weight: 600;
-            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            
             color: #534014;
             margin-bottom: 30px;
 
@@ -212,7 +212,6 @@
 
         .Categories {
             text-align: center;
-            font-family: 'Playfair Display', serif;
             color: #642c12;
             font-weight: 600;
 
@@ -504,6 +503,25 @@
         .gi:hover {
             transform: scale(1.02);
         }
+        .input-grp{
+            position: relative;
+            width:100%;
+        }
+        .input-grp i{
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+
+        }
+        .input-grp input {
+            padding-left: 38px;
+        }
+        .btn-success{
+            background-color: rgb(186, 107, 50);
+            border: none;
+        }
+
         /* gallery */
         .fa-images{
             color: #762f22;
@@ -538,18 +556,8 @@
             transition: box-shadow 0.5s ease;
             transition: 0.5s all;
         }
-        .input-grp{
-            position: relative;
-            width:100%;
-        }
-        .input-grp i{
-            position: absolute;
-            left: 12px;
-            top: 50%;
-            transform: translateY(-50%);
-
-        }
-        .input-grp input {
-            padding-left: 38px;
+        .ftr-back{
+            background-color: #4A3628;
         }
 
+        
