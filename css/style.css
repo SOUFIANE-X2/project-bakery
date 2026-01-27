@@ -194,7 +194,7 @@
             color: #4b3f2f;
             font: optional;
         }
-        
+
 
         .logo-img {
             height: 60px !important;
@@ -437,7 +437,6 @@
         }
 
         /*contact style*/
-
         .form-contact {
             background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(30px);
