@@ -42,12 +42,46 @@
             <img src="images/i1.jpg" class="img-fluid Home w-100 bgback" id="im1">
 
             <div class="position-absolute top-50 start-50 translate-middle text-center p-4">
-                <h1 class=" fw-bold display-1" class="f1"></h1>
+                <h1 class=" fw-bold display-1" id="t1"></h1>
 
                 <p class="mb-4" id="f2">Freshly baked goods made with love and the finest ingredients.</p>
             </div>
         </div>
     </section>
+    <section class="py-5 presentation">
+    <div class="container">
+        <div class="row align-items-center g-5">
+
+            
+            <div class="col-12 col-md-7">
+                <h2 class="fw-bold mb-2">Who We Are</h2>
+                <small class="text-muted d-block mb-3">
+                    A bakery built on passion and tradition
+                </small>
+
+                <p>
+                    At Our Bakery, we craft fresh breads and pastries every day using quality ingredients
+                    and time-honored techniques. Our focus is simple: honest flavors, warm moments,
+                    and products made with care.
+                </p>
+
+                <p class="fw-semibold mt-3">
+                    🥖 Baked fresh every morning · Family-owned since 2012
+                </p>
+            </div>
+
+            
+            <div class="col-12 col-md-4 text-center">
+                <img src="images/g9.jpg"
+                     class="img-fluid rounded-4 shadow presentation-img"
+                     alt="Our bakery storefront">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
     <section class="mt-5 mb-5">
         <div class="container">
             <h2 class="text-center fs-1 mb-5">Our Bakery in Numbers 📊</h2>
@@ -63,7 +97,7 @@
                 <div class="card card-statistique text-center p-4 col-12 col-md-5 col-lg-2 col-sm-6 cd">
                     <div class="fs-1 mb-2">🥐</div>
                     <h3 class="fw-bold t1">Croissant</h3>
-                    <p class="mb-0 fw-bold fs-5">Best Seller</p>
+                    <p class="mb-0 fw-bold fs-5">Best Seller</p>                                                       
                     <small class="text-muted">Over 50,000 sold this year</small>
                 </div>
 
@@ -85,7 +119,7 @@
         </div>
         <div class="text-center mt-4">
             <h2 class="text-center mt-5 fs-1 mb-5">🎯 Ready to taste what everyone's raving about?</h2>
-            <a href="service.html" class="btn btn-primary btn-lg px-2 py-2 w-10 w-md-auto">Explore Our Menu →</a>
+            <a href="service.html" class="btn btn-primary btn-lg px-2 py-2 w-md-auto">Explore Our Menu →</a>
         </div>
         <br><br>
         <br>
@@ -94,9 +128,9 @@
 
     <section>
         <div class="position-relative overflow-hidden">
-            <img src="images/i1.jpg" class="img-fluid w-100 bgback" id="im1">
+            <img src="images/i1.jpg" class="img-fluid w-100 bgback " id="im2">
             <div class="position-absolute top-50 start-50 translate-middle text-center w-75 p-4">
-                <h1 class="fw-bold display-1" class="f1">FAQ</h1>
+                <h1 class="fw-bold display-1" id="f1">FAQ</h1>
                 <div class="accordion mt-5" id="ac">
                     <div class="accordion-item">
                         <h2 class="accordion-header">
@@ -161,7 +195,7 @@
         </div>
     </section>
 </main>
-    <footer class="text-white py-4" style="background-color: #4A3628;">
+    <footer class="text-white py-4 ftr-back">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-4 col-12  justify-content-center">
@@ -184,22 +218,21 @@
         </div>
     </footer>
     <script>
-        const text = "Welcome to Our Bakery";
-        let i = 0;
-        const title = document.getElementById("f1");
+            const text = "Welcome to Our Bakery";
+            let i = 0;
+            const title = document.getElementById("t1"); 
 
-        function type() {
+            function type() {
             if (i < text.length) {
-                title.textContent = text.slice(0, i + 1) + "|";
-                i++;
-                setTimeout(type, 100);
+            title.textContent = text.slice(0, i + 1) + "|";
+            i++;
+            setTimeout(type, 100);
             } else {
-                title.textContent = text;
+            title.textContent = text; 
             }
-        }
-
+            }
         type();
-    </script>
+</script>
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
