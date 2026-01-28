@@ -1,14 +1,3 @@
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    background-color: #fdf6e3;
-    color: #4b3f2f;
-}
-
-
 .navbar {
     background-color: #594b3a;
     height: 70px;
@@ -48,12 +37,21 @@ body {
 
 
 #im1,
-.img2 {
+#img2 {
     height: 100vh;
     object-fit: cover;
     opacity: 0.8;
 }
-
+@media (max-width: 576px) {
+    #im1 {
+        height: 70vh;
+    }
+}
+@media (max-width: 576px) {
+    .position-absolute.translate-middle {
+        width: 90%;
+    }
+}
 
 .btn-primary {
     background-color: #4b3f2f;
