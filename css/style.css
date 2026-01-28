@@ -41,8 +41,8 @@
                 border-radius: 0;
             }
         }
-      
-        
+
+
 
         .navbar-brand {
             transition: transform 0.3s ease;
@@ -161,11 +161,6 @@
             transition: all 0.5s;
         }
 
-        footer {
-            background-color: #452203;
-            color: #fff;
-        }
-
         /*service syle*/
         .serv {
             background-image: url(../images/i1.jpg);
@@ -174,7 +169,7 @@
             background-attachment: fixed;
             background-repeat: no-repeat;
             color: #4b3f2f;
-            
+
         }
 
 
@@ -211,7 +206,7 @@
             height: auto;
             width: auto;
             padding: 30px 40px 0px;
-            
+
 
 
         }
@@ -387,7 +382,7 @@
             color: #762f22;
         }
 
-        
+
 
         .gallery {
             background-color: rgba(255, 255, 255, 0.1);
@@ -412,20 +407,23 @@
         }
 
         /*contact style*/
-        .input-grp{
+        .input-grp {
             position: relative;
-            width:100%;
+            width: 100%;
         }
-        .input-grp i{
+
+        .input-grp i {
             position: absolute;
             left: 12px;
             top: 50%;
             transform: translateY(-50%);
 
         }
+
         .input-grp input {
             padding-left: 38px;
         }
+
         .form-contact {
             background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(30px);
@@ -479,11 +477,11 @@
             background-color: #877560 !important;
         }
 
-        
 
-        
 
-    
+
+
+
 
         .c {
             text-decoration: none;
@@ -518,4 +516,9 @@
 
         .gi:hover {
             transform: scale(1.02);
+        }
+
+        footer {
+            background-color: #594b3a;
+            color: #fff;
         }
