@@ -242,8 +242,7 @@
         }
 
         .fc {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(30px);
+            background: rgba(245, 228, 228, 0.1);
             border: solid 1px rgb(171, 79, 42);
         }
 
@@ -307,12 +306,6 @@
                 max-width: 100%;
             }
 
-
-        }
-
-        .imagebread {
-            height: 340px !important;
-            width: 100% !important;
 
         }
 
