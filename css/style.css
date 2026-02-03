@@ -18,8 +18,6 @@
             font-size: large;
             display: inline-block;
             transition: transform 0.3s ease;
-            transform-origin: center;
-            will-change: transform;
         }
 
         .nav-link:hover {
@@ -91,27 +89,18 @@
             background-color: #3e3325 !important;
         }
 
-        .cd {
-            width: 18rem !important;
-            height: 27rem !important;
-            transition: transform 0.3s ease;
-        }
-
-        .cd:hover {
-            transform: scale(1.05);
-        }
-
         .card-statistique {
-            background: #fff5e6;
+            background: #fff5e6 !important;
             border-radius: 15px;
-            box-shadow: 0 0px 10px #e98c3b;
+            box-shadow: 0 0px 8px #3f2210 !important;
             text-align: center;
+            width: 18rem !important;
             height: 300px !important;
         }
 
         .card-statistique:hover {
             transform: scale(1.05);
-            box-shadow: 0 10px 30px #3e3325;
+            box-shadow: 0px 0px 10px #000000 !important;
             transition: all 0.5s;
 
 
@@ -454,7 +443,6 @@
         }
 
         .fcc:focus::placeholder {
-            opacity: 1;
             font-weight: 500;
         }
 
